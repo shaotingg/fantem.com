@@ -16,7 +16,7 @@ img{display:block}
 
 .section2 img{ width: 100%;}
 .section3 img{ width: 100%;}
-.section10 img{ margin: 0 auto; width: 90vw; padding: 20vw 0 0 0}
+.section10 img{ margin: 0 auto; width: 90vw; padding: 5vw 0 0 0}
 .section11 img{ width: 50vw;border: solid 15px #fff;margin: 10vh auto 0 auto;}
 
 
@@ -62,24 +62,25 @@ img{display:block}
 .section3 .icon-group{position: relative; bottom: -120%;}
 
 
-
-.svg-l{ text-align:left;position: relative; left: -120%;}
-.svg-r{ text-align:right;position: relative; left: -120%;}
+.icon-img{position:relative; left: -120%;}
+.svg-c{text-align: center; width: 100%;padding: 0 0 1vh 0}
+.svg-l{ float: left; width: 50%;}
+.svg-r{  float: right; width: 50%;}
 
 
 
 .them{ text-align: left;}
-.them .them-title{ padding: 0 0 1.5vh 0}
+.them .them-title{ padding: 0}
 
 
 .product-list{padding: 0 4vw;}
 .product-one{ padding:0 0 3vh 0; }
 .product-one .title{    text-transform: uppercase; font-size: 0.7em; color:#F26F21; font-weight: 300; text-decoration: }
-.product-one img{ float: left; width: 45vw; height: 45vw;padding: 0 4vw 0 0;}
+.product-one img{ float: left; width: 40vw; height: 40vw;padding: 0 4vw 0 0;}
 .product-one h6{ margin:10px 0 0 0;}
 
 
-.section2 .icon-group,.section3 .icon-group{ padding: 3vh 0 0 0}
+.section2 .icon-group,.section3 .icon-group{ padding: 2vh 0 0 0}
 .icon-group{ padding:0; }
 .icon-group li{ width: 33.3333vw; float: left; text-align: center;padding:0 0 2vh 0;}
 .icon-group .icon{ width: 15vw; margin:0 auto; }
@@ -90,8 +91,35 @@ img{display:block}
 .content-list{ color: rgba(255,255,255,0.7);}
 
 
+.bgm-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 200;
+  display: block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-image: url(../images/bgmBtn.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
+.bgm-btn.playing{
+  -webkit-animation:spin 2s infinite linear;
+}
 
+@-webkit-keyframes spin {
+  0%{
+    -webkit-transform: rotate(0deg);
+  }
+  50%{
+    -webkit-transform: rotate(180deg);
+  }
+  100%{
+    -webkit-transform: rotate(360deg);
+  }
+}
 
 .godown {
     position: absolute;
