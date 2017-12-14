@@ -74,8 +74,8 @@ $(function(){
 		}
 	});
 	//音乐控制
+	var bgm = document.getElementById("bgm")
 	$('#bgm-btn').click(function(){
-		var bgm = $('#bgm')
 		if(bgm.paused){
 			bgm.play()
 			$(this).toggleClass('playing')
@@ -91,7 +91,10 @@ $(function(){
 
 <body style="position: relative;">
 <div class="bgm-btn playing" id="bgm-btn">
-	<audio id="bgm" src="./sound/bgm.mp3" autoplay></audio>
+	<audio id="bgm" autoplay>
+		<source src="./sound/bgm.ogg" type="audio/ogg">
+		<source src="./sound/bgm.mp3" type="audio/mpeg">
+	</audio>
 </div>
 <div id="dowebok">
 	<div class="section section1" >
@@ -562,9 +565,10 @@ $(function(){
 			</svg>
 		</div>
 		<h3>公司简介</h3>
-		<p>OOMI是FANTEM旗下主营的智能家居品牌，我们致力于消费者提供一套“易用，会用，好用”的智能家居产品。整套智能家居系统包含多功能网关OOMI Cube及操作面板OOMI Touch及其他近20个节点。产品功能更是覆盖全面，包含开关类，传感类，照明类产品。</p>
+		<p>丰唐物联技术（深圳）有限公司是一家集设计研发、生产、销售于一体，专注于物联网及无线智能家居产品的高端品牌企业。公司成立于2011年，是美国Aeon Labs LLC与中国YITOA英唐智控（股票代码：300131）强强联合的高新技术企业，公司致力于为人们提供安全、节能、便捷和舒适的智慧生活，是领先的智能家居产品和系统方案服务提供商。
+</p>
 
-    <p>OOMI现已与多个产品家居品牌实现兼容，并可通过iOS或者安卓Oomi APP 实现操控。</p>
+    <p>丰唐物联在美国硅谷拥有一流的研发队伍，掌握多项关键物联网核心技术。迄今为止，我们共获得100多项专利技术，并以每年推出10款新品的速度，快速满足用户的高品质需求。我们产品的设计在满足用户舒适生活的同时突出时尚感、科技感，并且安装便捷，操作简单，实现对灯光、窗帘、空调、影音等家电全方位智能控制。不仅适用于追求高品质生活的家庭用户，同样适用于酒店、办公场所等商业用户。我们的客户遍布美洲、欧洲、澳大利亚等全球各地，得到上百万国际用户的认可。</p>
     <a class="godown" ><span><svg width="60" height="32" viewBox="0 0 30 16" xmlns="http://www.w3.org/2000/svg"><title>Shape</title><desc>Created with Sketch.</desc><path d="M30 .918c0 .241-.096.472-.265.641l-14.096 14.172c-.17.172-.401.27-.642.27s-.473-.097-.642-.27l-14.088-14.172c-.229-.231-.319-.567-.235-.882.084-.315.329-.561.642-.646.313-.084.648.006.877.236l13.462 13.517 13.445-13.509c.258-.259.646-.336.984-.196.337.14.557.471.558.838z" fill="#F26F21" fill-rule="nonzero"></path></svg></span></a>
 	</div>
   	<div class="section section10">
@@ -587,8 +591,9 @@ $(function(){
 			</svg>
 		</div>
 		<h3>品牌简介</h3>
-		<p>OOMI是丰唐物联技术（深圳）有限公司旗下的智能家居品牌,OOMI拥有一个多合一网关及众多智能家居产品。不需要使用其他的智能家居产品，OOMI可以与多个品牌实现兼容，OOMI系统能实现安防监控环境／全方位便捷，</p>
-		<P>在Touch的控制下，我们可以设置单独的场景，同样，你也可以使用iOS或者安卓安装OOMI APP实现控制所有的设备.只要通过指尖上的活动就可以一一实现。</p>
+		<p>OOMI是FANTEM旗下主营的智能家居品牌，我们致力于消费者提供一套“易用，会用，好用”的智能家居产品。整套智能家居系统包含多功能网关OOMI Cube及操作面板OOMI Touch及其他近20个节点。产品功能更是覆盖全面，包含开关类，传感类，照明类产品。</p>
+
+    <p>OOMI现已与多个产品家居品牌实现兼容，并可通过iOS或者安卓Oomi APP 实现操控。</p>
 		<P><img src="images/pic-02.png"></p>
 		<a class="godown" ><span><svg width="60" height="32" viewBox="0 0 30 16" xmlns="http://www.w3.org/2000/svg"><title>Shape</title><desc>Created with Sketch.</desc><path d="M30 .918c0 .241-.096.472-.265.641l-14.096 14.172c-.17.172-.401.27-.642.27s-.473-.097-.642-.27l-14.088-14.172c-.229-.231-.319-.567-.235-.882.084-.315.329-.561.642-.646.313-.084.648.006.877.236l13.462 13.517 13.445-13.509c.258-.259.646-.336.984-.196.337.14.557.471.558.838z" fill="#F26F21" fill-rule="nonzero"></path></svg></span></a>
 		</div>
