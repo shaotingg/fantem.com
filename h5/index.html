@@ -85,6 +85,10 @@ $(function(){
 			$(this).toggleClass('playing')
 		}
 	})
+	bgm.play()
+	document.addEventListener("WeixinJSBridgeReady", function(){
+		bgm.play()
+	}, false)
 
 });
 </script>
