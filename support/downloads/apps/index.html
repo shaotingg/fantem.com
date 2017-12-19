@@ -60,13 +60,35 @@
 	  			<i class="icon-android">
 	  				<svg width="26" height="30" viewBox="0 0 26 30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="a" d="M0 20.031v-10.635h3.546v10.635h-3.546z"/></defs><g fill="none"><path d="M9.305 4.223c.442 0 .8.355.8.797 0 .442-.358.8-.8.8-.442 0-.801-.358-.801-.8 0-.442.359-.797.801-.797m6.9 0c.442 0 .801.355.801.797 0 .442-.359.8-.801.8-.442 0-.8-.358-.8-.8 0-.442.358-.797.8-.797m-8.313-4.097l1.522 2.21c.999-.41 2.108-.638 3.27-.638 1.225 0 2.384.254 3.427.703l1.594-2.311c.065-.094.195-.119.293-.054l.04.029c.094.065.119.199.051.293l-1.547 2.246c2.235 1.123 3.832 3.195 4.162 5.629h-16.043c.337-2.489 2.003-4.6 4.318-5.705l-1.474-2.134c-.065-.097-.04-.228.054-.293l.04-.029c.094-.065.228-.04.293.054" fill="#A4CA39"/><path d="M23.526 9.436h.355c.877 0 1.597.92 1.597 2.043v6.549c0 1.122-.72 2.043-1.597 2.043h-.355c-.876 0-1.594-.921-1.594-2.043v-6.549c0-1.123.718-2.043 1.594-2.043" fill="#A4CA39"/><path d="M11.308 23.852v3.691c0 1.123-.717 2.043-1.594 2.043h-.355c-.876 0-1.593-.92-1.593-2.043v-3.691h-1.467c-.899 0-1.634-.735-1.634-1.63v-12.924h16.162v12.924c0 .895-.735 1.63-1.63 1.63h-1.347v3.734c0 1.123-.718 2.043-1.594 2.043h-.355c-.877 0-1.594-.92-1.594-2.043v-3.734h-2.999z" fill="#A4CA39"/><path d="M1.594 9.396h.355c.88 0 1.597.92 1.597 2.043v6.549c0 1.123-.717 2.043-1.597 2.043h-.355c-.877 0-1.594-.92-1.594-2.043v-6.549c0-1.123.717-2.043 1.594-2.043" fill="#A4CA39"/><mask><use xlink:href="#a"/></mask></g></svg>
 	  			</i>
-	  			<a href="http://app.fantem.cn/upload/com.fantem.phonecn.apk">
+	  			<a id="download-apk" href="http://app.fantem.cn/upload/com.fantem.phonecn.apk">
 	  				<span>官网下载</span>
 	  			</a>
 	  		</div>
 		  </div>
 		</div>
-
 	</div>
+	<div id="modal" class="modal">
+	  <div class="modal-background"></div>
+	  <div class="modal-content">
+	  	<p style="color: white;font-size: 20px;text-align: center">点击右上角... <br/>在浏览器中打开<p>
+	  </div>
+	  <button id="modal-close" class="modal-close is-large" aria-label="close"></button>
+	</div>
+	<script>
+		window.onload = function(){
+			var modal = document.getElementById("modal");
+			var download = document.getElementById("download-apk");
+			var close = document.getElementById("modal-close");
+			download.addEventListener("click",function(){
+				var ua = navigator.userAgent.toLowerCase();
+				if(ua.match(/MicroMessenger/i) == "micromessenger"){
+					modal.className="modal is-active";
+				}
+			})
+			close.addEventListener("click",function(){
+				modal.className="modal";
+			})
+		}
+	</script>
 </body>
 </html>
