@@ -1,0 +1,19 @@
+<template>
+  <footer>
+    <div class="has-text-centered">
+      <p>
+        &copy; Copyright 2011-{{currentYear}} Fantem All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+</template>
+
+<script>
+  export default {
+    data () {
+      return {
+        currentYear: new Date().getFullYear()
+      }
+    }
+  }
+</script>
