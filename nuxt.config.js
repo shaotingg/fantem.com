@@ -21,7 +21,7 @@ module.exports = {
   ** Build configuration
   */
   css: [
-    '~/assets/style.styl'
+    '~/assets/styles/style.styl'
   ],
   build: {
     /*
