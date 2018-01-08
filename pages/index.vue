@@ -1,20 +1,20 @@
 <template>
   <div>
     <page-header></page-header>
-    <section-header></section-header>
+    <page-main></page-main>
     <page-footer></page-footer>
   </div>
 </template>
 
 <script>
 import PageHeader from '~/components/Header.vue'
-import SectionHeader from '~/components/SectionHeader.vue'
+import PageMain from '~/components/Main.vue'
 import PageFooter from '~/components/Footer.vue'
 
 export default {
   components: {
     PageHeader,
-    SectionHeader,
+    PageMain,
     PageFooter
   }
 }

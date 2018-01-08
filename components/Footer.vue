@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer class="footer">
     <div class="has-text-centered">
       <p>
         &copy; Copyright 2011-{{currentYear}} Fantem All Rights Reserved.
