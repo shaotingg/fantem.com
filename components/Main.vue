@@ -1,15 +1,18 @@
 <template>
-  <div>
+  <main class="main">
     <section-header></section-header>
-  </div>
+    <product></product>
+  </main>
 </template>
 
 <script>
 import SectionHeader from '~/components/SectionHeader.vue'
+import Product from '~/components/Product.vue'
 
 export default {
   components: {
-    SectionHeader
+    SectionHeader,
+    Product
   }
 }
 </script>
