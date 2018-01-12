@@ -4,7 +4,11 @@ module.exports = {
   */
   head: {
     title: 'The Simple Smart Home',
-    titleTemplate: 'Fantem | %s'
+    titleTemplate: 'Fantem | %s',
+    link: [
+      { rel: 'stylesheet', href: '//cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css' },
+      { rel: 'stylesheet', href: '//cdn.jsdelivr.net/npm/bulma/css/bulma.min.css' }
+    ]
   },
   modules: [
     '@nuxtjs/icon',
