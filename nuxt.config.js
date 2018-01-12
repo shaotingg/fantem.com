@@ -3,9 +3,8 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Fantem'
-  },
-  manifest: {
+    title: 'The Simple Smart Home',
+    titleTemplate: 'Fantem | %s'
   },
   modules: [
     '@nuxtjs/icon',

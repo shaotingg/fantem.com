@@ -1,10 +1,10 @@
 <template>
   <section class="container product">
-    <div class="columns is-mobile is-multiline">
-      <div v-for="(item, key) in items" :key="key" class="column is-full-mobile is-half-tablet is-one-third-desktop is-one-third-widescreen is-one-quarter-fullhd">
+    <div class="columns is-multiline">
+      <div v-for="(item, key) in items" :key="key" class="column is-half-tablet is-one-third-desktop is-one-quarter-widescreen is-one-fifth-fullhd">
         <div class="inner-box">
           <img :src="item.img">
-          <div class="icons columns is-mobile">
+          <div class="icons columns is-mobile is-gapless">
             <img class="column" v-for="(icon, key) in item.icons" :key="key" :src="icon.src">
           </div>
           <div class="info">
@@ -42,10 +42,10 @@
           {
             img: 'https://picsum.photos/800/600/?random=1',
             icons: [
-              {src: require('~/assets/images/icon1.svg')},
-              {src: require('~/assets/images/icon2.svg')},
-              {src: require('~/assets/images/icon3.svg')},
-              {src: require('~/assets/images/icon4.svg')}
+              {src: require('~/assets/images/bell.svg')},
+              {src: require('~/assets/images/camera.svg')},
+              {src: require('~/assets/images/green.svg')},
+              {src: require('~/assets/images/water.svg')}
             ],
             title: 'MultiSensor (6-in-1)',
             subtitle: 'Six sensor in one.'
@@ -53,10 +53,10 @@
           {
             img: 'https://picsum.photos/800/600/?random=2',
             icons: [
-              {src: require('~/assets/images/icon1.svg')},
-              {src: require('~/assets/images/icon2.svg')},
-              {src: require('~/assets/images/icon3.svg')},
-              {src: require('~/assets/images/icon4.svg')}
+              {src: require('~/assets/images/bell.svg')},
+              {src: require('~/assets/images/camera.svg')},
+              {src: require('~/assets/images/green.svg')},
+              {src: require('~/assets/images/water.svg')}
             ],
             title: 'MultiSensor (6-in-1)',
             subtitle: 'Six sensor in one.'
@@ -64,10 +64,10 @@
           {
             img: 'https://picsum.photos/800/600/?random=3',
             icons: [
-              {src: require('~/assets/images/icon1.svg')},
-              {src: require('~/assets/images/icon2.svg')},
-              {src: require('~/assets/images/icon3.svg')},
-              {src: require('~/assets/images/icon4.svg')}
+              {src: require('~/assets/images/bell.svg')},
+              {src: require('~/assets/images/camera.svg')},
+              {src: require('~/assets/images/green.svg')},
+              {src: require('~/assets/images/water.svg')}
             ],
             title: 'MultiSensor (6-in-1)',
             subtitle: 'Six sensor in one.'
@@ -75,10 +75,21 @@
           {
             img: 'https://picsum.photos/800/600/?random=4',
             icons: [
-              {src: require('~/assets/images/icon1.svg')},
-              {src: require('~/assets/images/icon2.svg')},
-              {src: require('~/assets/images/icon3.svg')},
-              {src: require('~/assets/images/icon4.svg')}
+              {src: require('~/assets/images/bell.svg')},
+              {src: require('~/assets/images/camera.svg')},
+              {src: require('~/assets/images/green.svg')},
+              {src: require('~/assets/images/water.svg')}
+            ],
+            title: 'MultiSensor (6-in-1)',
+            subtitle: 'Six sensor in one.'
+          },
+          {
+            img: 'https://picsum.photos/800/600/?random=5',
+            icons: [
+              {src: require('~/assets/images/bell.svg')},
+              {src: require('~/assets/images/camera.svg')},
+              {src: require('~/assets/images/green.svg')},
+              {src: require('~/assets/images/water.svg')}
             ],
             title: 'MultiSensor (6-in-1)',
             subtitle: 'Six sensor in one.'

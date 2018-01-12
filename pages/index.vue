@@ -16,6 +16,9 @@ export default {
     PageHeader,
     PageMain,
     PageFooter
+  },
+  mounted () {
+    window.location.href = '//www.fantem.cn'
   }
 }
 </script>
