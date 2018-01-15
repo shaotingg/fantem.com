@@ -2,11 +2,11 @@
     <section class="hero is-bold is-header is-large">
         <div class="hero-body has-text-centered">
             <div class="container">
-                <h1 class="title is-3 has-text-weight-light">
+                <h1 class="title">
                     FANTEM
                 </h1>
                 <img class="products" src="@/assets/images/fantem-products.png" alt="fantem products">
-                <h2 class="subtitle is-5 has-text-weight-light is-light">
+                <h2 class="subtitle">
                     Simple but Smart Products
                 </h2>
             </div>
@@ -29,20 +29,45 @@
         background-size: cover
         position: relative
         .hero-body
-            padding: 9rem 0 0
+            padding: 12% 0 0
         h1.title
             color: #fff
             font-size: 125px
+            text-indent: 70px
             letter-spacing: 70px
             font-family: 'aileronbold'
+            @media (max-width: 1215px)
+                font-size: (@font-size)*.7
+                text-indent: (@text-indent)*.7
+                letter-spacing: (@letter-spacing)*.7
+            @media (max-width: 991px)
+                font-size: (@font-size)*.6
+                text-indent: (@text-indent)*.6
+                letter-spacing: (@letter-spacing)*.6
+            @media (max-width: 640px)
+                font-size: (@font-size)*.3
+                text-indent: (@text-indent)*.3
+                letter-spacing: (@letter-spacing)*.3
         .products
-            padding-right: 170px
+            padding-right: 90px
         h2.subtitle
             color: #fff
             opacity: .5
             font-size: 52px
             margin-top: -60px
             margin-bottom: 60px
+            @media (max-width: 1215px)
+                font-size: (@font-size)*.7
+                margin-top: 0
+                margin-bottom: (@margin-bottom)*.7
+            @media (max-width: 991px)
+                font-size: (@font-size)*.6
+                margin-top: 0
+                margin-bottom: (@margin-bottom)*.6
+            @media (max-width: 640px)
+                font-size: (@font-size)*.3
+                margin-top: 0
+                margin-bottom: (@margin-bottom)*.3
     p.email-why
         margin-top: 7px
         font-size: .8em
