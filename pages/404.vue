@@ -32,6 +32,14 @@
         .icon404
             animation: twinkling 0.6s infinite ease-in-out
             margin-bottom: 30px
+            @keyframes twinkling
+                0%
+                100%
+                    color: #ccc
+                50%
+                    color: #333
+            &>svg
+                fill: currentColor
         h3
             font-size: 26px
             margin-bottom: 14px
@@ -53,11 +61,6 @@
                     vertical-align: middle
                     margin-top: -4px
                     margin-right: 10px
-keyframes twinkling
-    0%,100%
-        color: #ccc
-    50%
-        color: #333
 </style>
 
 <script>
