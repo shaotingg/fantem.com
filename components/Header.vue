@@ -19,9 +19,6 @@
             </span>
             {{menu.text}}
           </a>
-          <span class="nav-item">
-            <mail-chimp-form :isSmall="true"></mail-chimp-form>          
-          </span>
         </div>
       </nav>
     </div>
@@ -34,11 +31,6 @@
             </span>
             {{menu.text}}
           </a>
-        </li>
-        <li>
-          <div class="nav-item">
-            <mail-chimp-form></mail-chimp-form> 
-          </div>
         </li>
       </ul>
     </div>
@@ -180,14 +172,14 @@ export default {
       isFixed: false,
       menus: [
         {
-          icon: 'fa fa-envelope-o',
-          text: 'sales@fantem.com',
-          link: 'mailto:sales@fantem.com'
+          icon: 'fa fa-file-text-o',
+          text: 'e-catalogue',
+          link: '****.pdf'
         },
         {
-          icon: 'fa fa-file-text-o',
-          text: 'E-Catalogue',
-          link: '****.pdf'
+          icon: 'fa fa-envelope-o',
+          text: 'sales1@fantem.com',
+          link: 'mailto:sales@fantem.com'
         }
       ]
     }
