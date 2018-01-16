@@ -1,26 +1,27 @@
 <template>
-    <section class="hero is-bold is-header is-large">
-        <div class="hero-body has-text-centered">
-            <div class="container">
-                <h1 class="title">
-                    FANTEM
-                </h1>
-                <img class="products" src="@/assets/images/fantem-products.png" alt="fantem products">
-                <h2 class="subtitle">
-                    Simple but Smart Products
-                </h2>
-            </div>
+  <section class="hero is-bold is-header is-large">
+    <div class="hero-body has-text-centered">
+      <div class="container">
+          <h1 class="title">
+              FANTEM
+          </h1>
+          <img class="products" :src="productsImg" alt="fantem products">
+          <h2 class="subtitle">
+              Simple but Smart Products
+          </h2>
+      </div>
+    </div>
+    <section class="clients" :class="animationName">
+      <div class="animation-overlay"></div>
+      <div class="container" :class="animationName">
+        <div class="columns is-gapless">
+          <div class="column has-text-centered">
+            <img v-for="i in 13" :key="i.id" :src="require(`@/assets/images/cert${i}.svg`)" class="logo">
+          </div>
         </div>
-        <section class="clients">
-            <div class="container">
-                <div class="columns is-gapless">
-                    <div class="column has-text-centered">
-                        <img v-for="i in 13" :key="i.id" :src="require(`@/assets/images/cert${i}.svg`)" height="90px" class="logo">
-                    </div>
-                </div>
-            </div>
-        </section>
+      </div>
     </section>
+  </section>
 </template>
 
 <style lang="stylus">
@@ -50,6 +51,8 @@
                 letter-spacing: (@letter-spacing)*.3
         .products
             padding-right: 90px
+            @media (max-width: 600px)
+                padding-right: 0
         h2.subtitle
             color: #fff
             opacity: .5
@@ -68,20 +71,41 @@
                 font-size: (@font-size)*.3
                 margin-top: 0
                 margin-bottom: (@margin-bottom)*.3
-    p.email-why
-        margin-top: 7px
-        font-size: .8em
-        color: #fff
     .clients
-        background: hsla(0,0%,100%,.1)
-        padding: 10px 0
+        background: rgba(255,255,255,0)
+        transition: background 2s 0s
+        padding: 10px 30px
         text-align: center
         position: relative
+        &.slideUp
+          background: rgba(255,255,255,.1)
+          transition: background 2s 5s
         img.logo
             margin-bottom: 0
             height: 24px
+            vertical-align: bottom
             &+img.logo
                 margin-left: 15px
+            @media (max-width: 600px)
+                height: 16px
+        .animation-overlay
+          width: 756px
+          margin: 0 auto
+          height: 24px
+          @media (max-width: 770px)
+            height: 48px
+        .container
+          position: absolute
+          opacity: 0
+          bottom: -24px
+          transition: all 2s 0s
+          width: 100%
+          left: 50%
+          transform: translateX(-50%)
+          &.slideUp
+            transition: all 2s 5s
+            opacity: 1
+            bottom: 10px
 </style>
 
 <script>
@@ -90,6 +114,33 @@ import MailChimpForm from '~/components/MailChimpForm.vue'
 export default {
   components: {
     MailChimpForm
+  },
+  data () {
+    return {
+      productsImg: require('@/assets/images/fantem-products.png'),
+      animationName: 'slideUp',
+      timer: 0
+    }
+  },
+  mounted () {
+    window.addEventListener('resize', () => {
+      if (document.documentElement.clientWidth < 600) {
+        this.productsImg = require('@/assets/images/fantem-products-mobile.png')
+      } else {
+        this.productsImg = require('@/assets/images/fantem-products.png')
+      }
+    })
+    window.addEventListener('scroll', () => {
+      clearTimeout(this.timer)
+      this.animationName = 'slideUp'
+      this.timer = setTimeout(() => {
+        this.animationName = 'slideDown'
+      }, 20 * 60 * 1000)
+    })
+  },
+  beforeDestroy () {
+    window.removeEventListener('resize')
+    window.removeEventListener('scroll')
   }
 }
 </script>

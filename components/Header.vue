@@ -62,15 +62,13 @@
         background-color: #112843
 .fadeInDown
   animation-name: fadeInDown
-@keyframes fadeInDown
-  0% {
+  @keyframes fadeInDown
+    0%
       opacity: 0
       transform: translate3d(0,-100%,0)
-  }
-  100% {
-    opacity: 1
-    transform: none
-  }
+    100%
+      opacity: 1
+      transform: none
 .animated
   animation-duration: 1s
   animation-fill-mode: both
