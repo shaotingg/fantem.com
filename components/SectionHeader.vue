@@ -79,7 +79,7 @@
         position: relative
         &.slideUp
           background: rgba(255,255,255,.1)
-          transition: background 2s 5s
+          transition: background 2s 0s
         img.logo
             margin-bottom: 0
             height: 24px
@@ -103,7 +103,7 @@
           left: 50%
           transform: translateX(-50%)
           &.slideUp
-            transition: all 2s 5s
+            transition: all 2s 0s
             opacity: 1
             bottom: 10px
 </style>
@@ -118,29 +118,36 @@ export default {
   data () {
     return {
       productsImg: require('@/assets/images/fantem-products.png'),
-      animationName: 'slideUp',
+      animationName: '',
       timer: 0
     }
   },
-  mounted () {
-    window.addEventListener('resize', () => {
+  methods: {
+    onResize () {
       if (document.documentElement.clientWidth < 600) {
         this.productsImg = require('@/assets/images/fantem-products-mobile.png')
       } else {
         this.productsImg = require('@/assets/images/fantem-products.png')
       }
-    })
-    window.addEventListener('scroll', () => {
+    },
+    onScroll () {
       clearTimeout(this.timer)
       this.animationName = 'slideUp'
       this.timer = setTimeout(() => {
         this.animationName = 'slideDown'
       }, 20 * 60 * 1000)
-    })
+    }
+  },
+  mounted () {
+    this.timer = setTimeout(() => {
+      this.animationName = 'slideUp'
+    }, 5000)
+    window.addEventListener('resize', this.onResize)
+    window.addEventListener('scroll', this.onScroll)
   },
   beforeDestroy () {
-    window.removeEventListener('resize')
-    window.removeEventListener('scroll')
+    window.removeEventListener('resize', this.onResize)
+    window.removeEventListener('scroll', this.onScroll)
   }
 }
 </script>
