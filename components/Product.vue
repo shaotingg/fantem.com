@@ -10,6 +10,9 @@
           <div class="textContent" v-if="index%2 == 0">
             <p class="title">{{item.title}} {{index+1}}</p>
             <p class="subtitle">{{item.subtitle}}</p>
+            <div class="productImg">
+              <img :src="item.img">
+            </div>
             <p class="desc">{{item.description}}</p>
             <div class="icons" v-if="item.icons">
               <div v-for="icon in item.icons" :key="icon.id">
@@ -27,14 +30,14 @@
           </div>
         </div>
       </div>
-      <div class="center">
-        <img :src="item.img">
-      </div>
       <div class="right">
         <div class="inner">
           <div class="textContent" v-if="index%2 == 1">
             <p class="title">{{item.title}} {{index+1}}</p>
             <p class="subtitle">{{item.subtitle}}</p>
+            <div class="productImg">
+              <img :src="item.img">
+            </div>
             <p class="desc">{{item.description}}</p>
             <div class="icons" v-if="item.icons">
               <div v-for="icon in item.icons" :key="icon.id">
@@ -65,27 +68,20 @@
     z-index: 1
     width: 0
     height: 0
-    top: -260px
+    top: -130px
     left: 50%
     transform: translateX(-50%)
-    border: 130px solid transparent
+    border: 65px solid transparent
     border-bottom-color: #4d4d4d
     &:after
       content: ''
       position: absolute
-      top: 130px
-      left: -130px
+      top: 65px
+      left: -65px
       width: 0
       height: 0
-      border: 130px solid transparent
+      border: 65px solid transparent
       border-top-color: #4d4d4d
-      @media (min-width: 992px)
-        border-width: 62px
-        top: 62px
-        left: -62px
-    @media (min-width: 992px)
-      border-width: 62px
-      top: -124px
     &-text
       position: absolute
       z-index: 2
@@ -101,15 +97,19 @@
       color: #fff
   &-item
     position: relative
-    height: 800px
+    height: 900px
     &.flex
       display: flex
       .title
         color: #512da8
         font-size: 27px
+        @media (max-width: 600px)
+          font-size: @font-size*.7
       .subtitle
         color: #512da8
         font-size: 20px
+        @media (max-width: 600px)
+          font-size: @font-size*.7
       .desc
         color: #4d4d4d
       .icons
@@ -118,8 +118,12 @@
         flex-wrap: wrap
         width: 257px
         justify-content: space-between
+        @media (max-width: 600px)
+          margin: .5rem 0 0
         &>div
           margin-bottom: .75rem
+          @media (max-width: 600px)
+            margin-bottom: .5rem
         img
           display: inherit
           margin: 0 auto
@@ -131,6 +135,8 @@
           margin-bottom: 2rem
           padding-left: 1.2rem
           list-style-type: disc
+          @media (max-width: 600px)
+            margin-bottom: 1rem
       .learnMore
         color: #000
         font-family: 'aileronbold'
@@ -146,35 +152,47 @@
           .textContent
             display: table-cell
             vertical-align: middle
-            padding: 15% 20%
-      .center
-        position: absolute
-        top: 50%
-        left: 60%
-        transform: translate(-50%, -50%)
+            padding: 65px 60px 0
+            .productImg
+              position: absolute
+              top: 50%
+              left: 60%
+              max-width: 640px
+              transform: translate(-50%, -50%)
+              @media (max-width: 600px)
+                margin: -50px auto
+                position: static
+                transform: none
+                width: 100%
       .right
         flex: 7
         display: flex
         height: @height
         background-image: linear-gradient(128deg, #B88EF1 0%, #AE87EE 16%, #9273E7 43%, #6553DA 78%, #463DD2 100%)
+        @media (max-width: 600px)
+          position: absolute
+          transform: rotateY(180deg)
         .inner
           border-width: 0 0 @height 90px
           border-style: solid
           border-color: transparent transparent transparent #f1f1f1
+          @media (max-width: 600px)
+            border-width: 0 0 @height 59px
     &:nth-child(even)
+      @media (max-width: 600px)
+        flex-direction: row-reverse
       .left
         flex: 7
         height: @height
         background-image: linear-gradient(128deg, #B88EF1 0%, #AE87EE 16%, #9273E7 43%, #6553DA 78%, #463DD2 100%)
+        @media (max-width: 600px)
+          transform: rotateY(180deg)
         .inner
           border-width: 0 90px @height 0
           border-style: solid
           border-color: transparent #fff transparent transparent
-      .center
-        position: absolute
-        top: 50%
-        right: 60%
-        transform: translate(50%, -50%)
+          @media (max-width: 600px)
+            border-width: 0 59px @height 0
       .right
         flex: 9
         height: @height
@@ -185,7 +203,18 @@
           .textContent
             display: table-cell
             vertical-align: middle
-            padding: 0 100px 0 200px
+            padding: 65px 60px 0
+            .productImg
+              position: absolute
+              top: 50%
+              right: 60%
+              max-width: 640px
+              transform: translate(50%, -50%)
+              @media (max-width: 600px)
+                margin: -50px auto
+                position: static
+                transform: none
+                width: 100%
 </style>
 
 <script>
