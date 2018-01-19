@@ -8,7 +8,7 @@
       <div class="left">
         <div class="inner">
           <div class="textContent" v-if="index%2 == 0">
-            <p class="title">{{item.title}} {{index+1}}</p>
+            <p class="title">{{index+1}}. {{item.title}}</p>
             <p class="subtitle">{{item.subtitle}}</p>
             <div class="productImg">
               <img :src="item.img">
@@ -30,10 +30,10 @@
           </div>
         </div>
       </div>
-      <div class="right">
+      <div class="right" :class="{hasSecondary: item.sencondary}">
         <div class="inner">
           <div class="textContent" v-if="index%2 == 1">
-            <p class="title">{{item.title}} {{index+1}}</p>
+            <p class="title">{{index+1}}. {{item.title}}</p>
             <p class="subtitle">{{item.subtitle}}</p>
             <div class="productImg">
               <img :src="item.img">
@@ -51,6 +51,17 @@
                 {{highlight}}  
               </li>
             </ul>
+            <div v-if="item.sencondary" class="secondary">
+              <p class="title">{{item.sencondary.title}}</p>
+              <p class="subtitle">{{item.sencondary.subtitle}}</p>
+              <p class="desc">{{item.sencondary.description}}</p>
+              <p class="highlights">Product Highlights:</p>
+              <ul>
+                <li v-for="highlight in item.sencondary.productHighlights" :key="highlight.id">
+                  {{highlight}}  
+                </li>
+              </ul>
+            </div>
             <a class="learnMore" :href="item.learnMore" target="_blank">Learn More</a>
           </div>
         </div>
@@ -152,7 +163,9 @@
           .textContent
             display: table-cell
             vertical-align: middle
-            padding: 65px 60px 0
+            padding: 0 20% 0 10%
+            @media (max-width: 600px)
+              padding: 0 59px 0
             .productImg
               position: absolute
               top: 50%
@@ -197,13 +210,17 @@
         flex: 9
         height: @height
         background: #fff
+        &.hasSecondary
+          font-size: 85%
         .inner
           display: table
           height: 100%
           .textContent
             display: table-cell
             vertical-align: middle
-            padding: 65px 60px 0
+            padding: 0 5% 0 20%
+            @media (max-width: 600px)
+              padding: 0 9px 0 59px
             .productImg
               position: absolute
               top: 50%

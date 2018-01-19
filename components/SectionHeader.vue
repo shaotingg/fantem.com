@@ -29,6 +29,7 @@
         background: url('../assets/images/background-purple.jpg') no-repeat
         background-size: cover
         position: relative
+        overflow: hidden
         .hero-body
             padding: 12% 0 0
         h1.title
