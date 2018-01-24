@@ -6,7 +6,6 @@
           <ul>
             <li>Site map</li>
             <li><a href="/" class="nuxt-link-exact-active nuxt-link-active">Home</a></li>
-            <li><a href="/">Product</a></li>
             <li><a href="/">About</a></li>
             <li><a href="/">Legal</a></li>
           </ul>
@@ -16,7 +15,7 @@
             <li>Social networks </li>
             <li><a href="/" target="_blank">Twitter</a></li>
             <li><a href="/" target="_blank">Linkedin</a></li>
-            <li><a href="/" target="_blank">Github</a></li>
+            <li><a href="/" target="_blank">Facebook</a></li>
           </ul>
         </div>
         <div class="column is-one-third">
@@ -24,7 +23,7 @@
             <li>Contact</li>
             <li>0755-26616688</li>
             <li><a href="mailto:support@fantem.com">support@fantem.com</a></li>
-            <li>25 rue du Petit Musc, 75004 Paris</li>
+            <li>5th Floor, Yingtang Building South 5th rd, High Technology Park, Nanshan District</li>
           </ul>
         </div>
       </div>
