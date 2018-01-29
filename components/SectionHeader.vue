@@ -31,7 +31,7 @@
         position: relative
         overflow: hidden
         .hero-body
-            padding: 12% 0 0
+            padding: 100px 0 0
         h1.title
             color: #fff
             font-size: 125px
