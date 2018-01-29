@@ -80,7 +80,7 @@ export default {
   methods: {
     downloadApk () {
       let ua = navigator.userAgent.toLowerCase()
-      if (ua.match(/MicroMessenger/i) === 'micromessenger') {
+      if (ua.match(/MicroMessenger/i)[0] === 'micromessenger') {
         this.isActive = true
       }
     }
