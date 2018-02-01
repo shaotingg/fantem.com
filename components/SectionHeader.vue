@@ -6,9 +6,6 @@
               FANTEM
           </h1>
           <img class="products" :src="productsImg" alt="fantem products">
-          <h2 class="subtitle">
-              Simple but Smart Products
-          </h2>
       </div>
     </div>
     <section class="clients" :class="animationName">
@@ -26,7 +23,7 @@
 
 <style lang="stylus">
     .hero.is-header
-        background: url('../assets/images/background-purple.jpg') no-repeat
+        background: url('../assets/images/background-dark.jpg') no-repeat
         background-size: cover
         position: relative
         overflow: hidden
@@ -51,9 +48,8 @@
                 text-indent: (@text-indent)*.3
                 letter-spacing: (@letter-spacing)*.3
         .products
-            padding-right: 90px
-            @media (max-width: 600px)
-                padding-right: 0
+          @media (max-width: 600px)
+            padding: 0 20px
         h2.subtitle
             color: #fff
             opacity: .5
@@ -118,7 +114,7 @@ export default {
   },
   data () {
     return {
-      productsImg: require('@/assets/images/fantem-products.png'),
+      productsImg: require('@/assets/images/fantem-family-black.png'),
       animationName: '',
       timer: 0
     }
@@ -126,9 +122,9 @@ export default {
   methods: {
     onResize () {
       if (document.documentElement.clientWidth < 600) {
-        this.productsImg = require('@/assets/images/fantem-products-mobile.png')
+        this.productsImg = require('@/assets/images/fantem-family-black-mobile.png')
       } else {
-        this.productsImg = require('@/assets/images/fantem-products.png')
+        this.productsImg = require('@/assets/images/fantem-family-black.png')
       }
     },
     onScroll () {
@@ -140,6 +136,7 @@ export default {
     }
   },
   mounted () {
+    this.onResize()
     this.timer = setTimeout(() => {
       this.animationName = 'slideUp'
     }, 5000)

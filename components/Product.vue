@@ -10,7 +10,7 @@
           <div class="textContent" v-if="index%2 == 0">
             <p class="title">{{index+1}}. {{item.title}}</p>
             <p class="subtitle">{{item.subtitle}}</p>
-            <div class="productImg">
+            <div class="productImg" :style="item.style">
               <img :src="item.img">
             </div>
             <p class="desc">{{item.description}}</p>
@@ -20,7 +20,7 @@
                 <span>{{icon}}</span>
               </div>
             </div>
-            <p class="highlights">Product Highlights:</p>
+            <p class="highlights">Product highlights:</p>
             <ul>
               <li v-for="highlight in item.productHighlights" :key="highlight.id">
                 {{highlight}}  
@@ -35,7 +35,7 @@
           <div class="textContent" v-if="index%2 == 1">
             <p class="title">{{index+1}}. {{item.title}}</p>
             <p class="subtitle">{{item.subtitle}}</p>
-            <div class="productImg">
+            <div class="productImg" :style="item.style">
               <img :src="item.img">
             </div>
             <p class="desc">{{item.description}}</p>
@@ -84,6 +84,10 @@
     transform: translateX(-50%)
     border: 65px solid transparent
     border-bottom-color: #4d4d4d
+    @media (max-width: 600px)
+      top: -90px
+      border: 45px solid transparent
+      border-bottom-color: @border-bottom-color
     &:after
       content: ''
       position: absolute
@@ -93,6 +97,11 @@
       height: 0
       border: 65px solid transparent
       border-top-color: #4d4d4d
+      @media (max-width: 600px)
+        top: 45px
+        left: -45px
+        border: 45px solid transparent
+        border-top-color: @border-top-color
     &-text
       position: absolute
       z-index: 2
@@ -106,6 +115,9 @@
       text-align: center
       text-transform: uppercase
       color: #fff
+      @media (max-width: 600px)
+        width: 80px
+        font-size: 12px
   &-item
     position: relative
     height: 900px
@@ -132,6 +144,7 @@
         @media (max-width: 600px)
           margin: .5rem 0 0
         &>div
+          text-align: center
           margin-bottom: .75rem
           @media (max-width: 600px)
             margin-bottom: .5rem
@@ -199,6 +212,7 @@
         height: @height
         background-image: linear-gradient(128deg, #B88EF1 0%, #AE87EE 16%, #9273E7 43%, #6553DA 78%, #463DD2 100%)
         @media (max-width: 600px)
+          position: absolute
           transform: rotateY(180deg)
         .inner
           border-width: 0 90px @height 0
@@ -220,7 +234,7 @@
             vertical-align: middle
             padding: 0 5% 0 20%
             @media (max-width: 600px)
-              padding: 0 9px 0 59px
+              padding: 0 59px 0
             .productImg
               position: absolute
               top: 50%
@@ -252,11 +266,12 @@ export default {
             'UV'
           ],
           img: require('@/assets/images/1-Multisensor.png'),
+          style: 'padding: 10px 0',
           productHighlights: [
-            'Anti-dismantle',
             'Tamper protection',
-            'Long battery life - 2 years',
+            'Long battery life 2 years',
             'Easy installation',
+            'Adjustable motion sensitivity',
             'Secure communication - AES 128'
           ],
           learnMore: '//1688.com'
@@ -272,10 +287,10 @@ export default {
           ],
           img: require('@/assets/images/2-Multisensor.png'),
           productHighlights: [
-            'Anti-dismantle',
             'Tamper protection',
-            'Long battery life - 2 years',
+            'Long battery life 2 years',
             'Easy installation',
+            'Adjustable motion sensitivity',
             'Secure communication - AES 128'
           ],
           learnMore: '//1688.com'
@@ -286,6 +301,7 @@ export default {
           description: 'Multi Sensor Recessor is used in conjuction with the Multi Sensor 6-in-1/3-in-1 as a mounting accessory. Secure your Multi Sensor to a ceiling or flat wall.',
           icons: [],
           img: require('@/assets/images/3-Multisensor-Recessor.png'),
+          style: 'padding: 25px 0',
           productHighlights: [
             '1.2cm protrusion',
             'Easily installed and removed',
@@ -319,6 +335,7 @@ export default {
           description: 'Door/Window Sensor Pebble provides your Z-Wave network with the intelligence required for a modern home automation and security system. And it does it all in a smaller, more elegant design crafted to suit any home\'s decor',
           icons: [],
           img: require('@/assets/images/5-DWSensor-Gen.png'),
+          style: 'padding: 15px 0',
           productHighlights: [
             'Simple installation',
             'Notifications',
@@ -387,6 +404,7 @@ export default {
           description: 'Installed in an electricity box, your Home Energy Meter will monitor the total amount of electricity your home uses with accuracy and speed. Using a wireless Z-Wave connection, it\'ll then feed the data it records back to your smart home\'s gateway. In near real-time you\'ll have a full understanding of how much ectricity you use and when you use it.',
           icons: [],
           img: require('@/assets/images/9-Home-Energy-Meter.png'),
+          style: 'padding: 25px 0',
           productHighlights: [
             '200amp max measurement',
             '99% accuracy',
@@ -510,6 +528,7 @@ export default {
           description: 'The Touch Switch works in conjuction with any in-wall product to replace your existing wall switch with a cool and attractive touch panel. Simply touch or slide to turn on/off/dim the lights, control your fan, open/close curtains, and start scenes.',
           icons: [],
           img: require('@/assets/images/16-Touch-Switch.png'),
+          style: 'padding: 25px 0',
           productHighlights: [
             'Dimming control',
             'Curtain control',
@@ -529,6 +548,7 @@ export default {
           description: 'Control your heavy duty appliances, turn them on or off remotely or via schedule. Monitor how much your high power appliance is costring you in real time. Works with appliances that require as much as 40 amps.',
           icons: [],
           img: require('@/assets/images/17-Heavy-Duty-Smart-Switch.png'),
+          style: 'padding: 15px 0',
           productHighlights: [
             'Secure communication - AES 128',
             'Remotely turn load on/off',
@@ -544,6 +564,7 @@ export default {
           description: 'Wallmote is an intelligent Z-Wave remote controller that can be mounted on a wall. It has 2/4 touch buttons to control your Z-Wave devices via touching, long pressing or sliding the button regions. Its surface has a RGB LED to indicate the button actions also accompanied by an optional beep and vibration.',
           icons: [],
           img: require('@/assets/images/18-Wallmote.png'),
+          style: 'padding: 25px 0',
           productHighlights: [
             'Simple to install',
             'Portable',
@@ -563,6 +584,7 @@ export default {
           description: 'Smart Plug is a smart plug that lets you wirelessly control whatever is plugged into it. You can do that via remote control or a smart phone, and from an automation schedule or from the power outlet itself. Now your wall socket is smarter and connected.',
           icons: [],
           img: require('@/assets/images/19-Smart-Plug.png'),
+          style: 'padding: 25px 0',
           productHighlights: [
             'Make any outlet smart',
             'Wireless control',
@@ -581,6 +603,7 @@ export default {
           description: 'Every press of Doorbell\'s outdoor button notifies your connected home that someone is at the door, allowing you to receive notifications, a chime in the home, and to activate any devices attached to your Z-Wave system.',
           icons: [],
           img: require('@/assets/images/20-Doorbell.png'),
+          style: 'padding: 15px 0',
           productHighlights: [
             'Notifications',
             '5 pre loaded chimes',
@@ -612,6 +635,7 @@ export default {
           description: 'Range Extender is a Z-Wave mesh network repeater which can extend the range of communication between Z-Wave products and assist other devices to reach each other in your Z-Wave network.',
           icons: [],
           img: require('@/assets/images/22-Range-Extender.png'),
+          style: 'padding: 15px 0',
           productHighlights: [
             'Repeats wireless signals',
             'Amplifies wireless signals',
@@ -671,6 +695,7 @@ export default {
           description: 'Day light. Candle light. Party lights. Whatever the mood, whatever the setting, whatever the time of day, Smart Bulb is ready to light a room with the perfect shade of light. Plug it in to turn any light in your home into a smart light. From there, Smart Bulb will fill your room with perfect light because Smart Bulb has been designed with 16 million, perfect shades of light.',
           icons: [],
           img: require('@/assets/images/26-Bulb.png'),
+          style: 'padding: 15px 0',
           productHighlights: [
             '16 million colors',
             'Daylight',

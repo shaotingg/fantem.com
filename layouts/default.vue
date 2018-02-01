@@ -4,7 +4,7 @@
 
 <style lang="stylus">
 ::-webkit-scrollbar
-  width: 8px
+  width: 10px
   &-thumb
     background: #999
     &:hover
