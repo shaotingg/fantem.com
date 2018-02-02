@@ -298,7 +298,7 @@ export default {
         {
           title: 'Recessor',
           subtitle: 'Elegantly hide sensors on any surface.',
-          description: 'Multi Sensor Recessor is used in conjuction with the Multi Sensor 6-in-1/3-in-1 as a mounting accessory. Secure your Multi Sensor to a ceiling or flat wall.',
+          description: 'Multi Sensor Recessor is used in conjuction with the Multi Sensor 6-in-1 and Motion Sensor 3-in-1 as a mounting accessory. Secure your Sensor to a ceiling or flat wall.',
           icons: [],
           img: require('@/assets/images/3-Multisensor-Recessor.png'),
           style: 'padding: 25px 0',
@@ -323,13 +323,14 @@ export default {
             'Highly accurate',
             'USB charger',
             'Easy installation',
+            'Two sides dry contact compatible',
             'Secure communication - AES 128'
           ],
           learnMore: '//fantemhome.en.alibaba.com'
         },
         {
           title: 'Door/Window Sensor Pebble',
-          subtitle: 'Monitor door access',
+          subtitle: 'Monitor door access.',
           description: 'Door/Window Sensor Pebble provides your Z-Wave network with the intelligence required for a modern home automation and security system. And it does it all in a smaller, more elegant design crafted to suit any home\'s decor.',
           icons: [],
           img: require('@/assets/images/5-DWSensor-Gen.png'),
@@ -339,7 +340,7 @@ export default {
             'Notifications',
             'Anti-tamper detection',
             '1-year battery life',
-            'Any doors/windows',
+            'Any door/window',
             'Secure communication - AES 128'
           ],
           learnMore: '//fantemhome.en.alibaba.com'
@@ -347,7 +348,7 @@ export default {
         {
           title: 'Dry Contact Sensor',
           subtitle: 'Monitor heating and water level systems.',
-          description: 'Detect a variety of dry contact signals. You just need to connect he external sensor to something such as the water level sensor, dry contact switch, dry contact relay and so on.',
+          description: 'Detect a variety of dry contact signals. You just need to connect he external sensor to something such as a water level sensor, dry contact switch, dry contact relay and so on.',
           icons: [],
           img: require('@/assets/images/6-Dry-Contact.png'),
           productHighlights: [
@@ -361,13 +362,14 @@ export default {
         {
           title: 'Water Sensor',
           subtitle: 'Stop leaks before they happen.',
-          description: 'Water Sensor helps you monitor for water leaks and floods, preventing them before they happen. Super accurate, it\'s capatable of measuring as little as .0008%mm of water.',
+          description: 'Water Sensor helps you monitor for water leaks and floods, preventing them before they happen. Super accurate, it\'s capatable of measuring as little as .25mm of water.',
           icons: [],
           img: require('@/assets/images/7-WaterSensor.png'),
           productHighlights: [
-            'Protect againt leaks and floods',
-            'Detect .0008mm of wayer',
+            'Protect against leaks and floods',
+            'Detect .25mm of water',
             '1-year battery life',
+            'Alerts for presence or absence of water',
             'Secure communication - AES 128'
           ],
           learnMore: '//fantemhome.en.alibaba.com'
@@ -375,24 +377,25 @@ export default {
         {
           title: 'Water Sensor Pro',
           subtitle: 'Prevent a little leak from becoming a big problem.',
-          description: 'More homes are damaged each year by small leaks than by devastating fires or burglaries.Water Sensor Pro changes that, using Z-Wave Plus to silently monitor areas of your home at risk of water and taking action if the worst occurs.',
+          description: 'More homes are damaged each year by small leaks than by devastating fires or burglaries.Water Sensor Pro changes that, using Z-Wave Plus to silently monitor areas of your home at risk of water damage and taking action if the worst occurs.',
           icons: [],
           img: require('@/assets/images/8-WaterSensorPro.png'),
           productHighlights: [
             'Dectect leaks, bursts, floods and overflows',
             'Get instant alerts',
-            'Small and discrete, isn\'t an eyeore',
+            'Small and discrete, isn\'t an eyesore',
             'Tamper protection',
             'Additional temperature sensor'
           ],
           sencondary: {
             title: 'Water Sensor Pro Dock',
             subtitle: 'More sensors more safety.',
-            description: 'Expand the functionality of Water Sensor Pro with the Water Sensor Pro Dock. Add more sensors and additional charging features to the Water Sensor Pro.',
+            description: 'Expand the functionality of Water Sensor Pro with the Water Sensor Pro Dock. Add more sensors and additional charging features to the Water Sensor Pro. Two hanging sensors can keep water within a specified level.',
             productHighlights: [
-              'Monitor 2 areas',
-              'Monitor an area within lasso sensor',
-              'Power supply the Water Sensor Pro'
+              'Set min and max water levels',
+              'Monitor any area within lasso sensor',
+              'Supply power to the Water Sensor Pro',
+              'Two vertical sensors'
             ]
           },
           learnMore: '//fantemhome.en.alibaba.com'
@@ -442,7 +445,7 @@ export default {
         {
           title: 'In-Wall Shutter',
           subtitle: 'Remotely control special motors.',
-          description: 'In-Wall Shutter is a low-cost motor controller specifically used to enable remote control(up/down/stop) of existing motors, such as window covering, window, projector and so on. Once installed, the existing switch can still function to control the motor manually.',
+          description: 'In-Wall Shutter is a low-cost motor controller specifically used to enable remote control (up/down/stop) of existing motors, such as window covering, window, projector and so on. Once installed, the existing switch can still function to control the motor manually.',
           icons: [],
           img: require('@/assets/images/11-In-Wall-Shutter.png'),
           productHighlights: [
@@ -463,15 +466,15 @@ export default {
             'Control power outlets or switches',
             'Automation and scheduling',
             'Extremely small',
-            'Perfectly safe (inbuilt surge protection)',
+            'Built-in surge protection',
             'Secure communication - AES 128'
           ],
           learnMore: '//fantemhome.en.alibaba.com'
         },
         {
-          title: 'In-Wall Small Switch',
+          title: 'In-Wall Smart Switch',
           subtitle: 'Turn any switch into a smart switch.',
-          description: 'In-Wall Switch is a Z-Wave specifically used to allow on/off control of any wall switches, including lights or power outlets. It can report real-time wattage consumption. In the event of power failure, non-volatile memory retains all programmed information relating to the unit\'s operating status.',
+          description: 'In-Wall Smart Switch is a Z-Wave switch specifically used to allow on/off control of any wall switch, including lights or power outlets. It can report real-time wattage consumption. In the event of power failure, non-volatile memory retains all programmed information relating to the unit\'s operating status.',
           icons: [],
           img: require('@/assets/images/11-In-Wall-Shutter.png'),
           productHighlights: [
@@ -480,7 +483,7 @@ export default {
             'Energy metering',
             'Automation and scheduling',
             'Extremely small',
-            'Perfectly safe (inbuilt surge protection)',
+            'Built-in surge protection',
             'Secure communication - AES 128'
           ],
           learnMore: '//fantemhome.en.alibaba.com'
@@ -496,7 +499,7 @@ export default {
             'Control sockets or switches',
             'Automation and scheduling',
             'Extremely small',
-            'Perfectly safe (inbuilt surge protection)',
+            'Built-in surge protection',
             'Secure communication - AES 128'
           ],
           learnMore: '//fantemhome.en.alibaba.com'
@@ -513,7 +516,7 @@ export default {
             'Energy metering',
             'Automation and scheduling',
             'Extremely small',
-            'Perfectly safe (inbuilt surge protection)',
+            'Built-in surge protection',
             'Secure communication - AES 128'
           ],
           learnMore: '//fantemhome.en.alibaba.com'
@@ -555,11 +558,46 @@ export default {
           learnMore: '//fantemhome.en.alibaba.com'
         },
         {
+          title: 'Smart Plug',
+          subtitle: 'Make any outlet smart.',
+          description: 'Smart Plug is a device that lets you wirelessly control whatever is plugged into it. Control the smart plug from a smart phone, remote, automation schedule or the power outlet itself. Now your wall socket is smarter and connected.',
+          icons: [],
+          img: require('@/assets/images/18-Smart-Plug.png'),
+          style: 'padding: 25px 0',
+          productHighlights: [
+            'Wireless control',
+            'Turn off devices in an emergency',
+            'Surge protection',
+            'Energy monitoring',
+            'Color LED ring displays energy usage',
+            'All countries',
+            'Secure communication - AES 128'
+          ],
+          learnMore: '//fantemhome.en.alibaba.com'
+        },
+        {
+          title: 'Smart Socket',
+          subtitle: 'Make any outlet smart.',
+          description: 'Smart Plug is a device that lets you wirelessly control whatever is plugged into it. Control the smart plug from a smart phone, remote, automation schedule or the power outlet itself. Now your wall socket is smarter and connected.',
+          icons: [],
+          img: require('@/assets/images/19-Smart-Socket.png'),
+          style: 'padding: 25px 0',
+          productHighlights: [
+            'Wireless control',
+            'Turn off devices in an emergency',
+            'Surge protection',
+            'Energy monitoring',
+            'All countries',
+            'Secure communication - AES 128'
+          ],
+          learnMore: '//fantemhome.en.alibaba.com'
+        },
+        {
           title: 'Wall Switch',
           subtitle: '2 or 4 shortcuts when you need them.',
-          description: 'Wall Switch is an intelligent Z-Wave remote controller that can be mounted on a wall. It has 2/4 touch buttons to control your Z-Wave devices via touching, long pressing or sliding the button regions. Its surface has a RGB LED to indicate the button actions also accompanied by an optional beep and vibration.',
+          description: 'Wall Switch is an intelligent Z-Wave remote controller that can be mounted on a wall or carried with you. It has 2/4 touch buttons to control your Z-Wave devices via touching, long pressing or sliding the button regions. Its surface has a RGB LED to indicate the button actions also accompanied by an optional beep and vibration.',
           icons: [],
-          img: require('@/assets/images/18-Wallmote.png'),
+          img: require('@/assets/images/20-Wall-Switch.png'),
           style: 'padding: 25px 0',
           productHighlights: [
             'Simple to install',
@@ -575,39 +613,6 @@ export default {
           learnMore: '//fantemhome.en.alibaba.com'
         },
         {
-          title: 'Smart Plug',
-          subtitle: 'Make any outlet smart.',
-          description: 'Smart Plug is a device that lets you wirelessly control whatever is plugged into it. Control the smart plug from a smart phone, remote, automation schedule or the power outlet itself. Now your wall socket is smarter and connected.',
-          icons: [],
-          img: require('@/assets/images/19-Smart-Plug.png'),
-          style: 'padding: 25px 0',
-          productHighlights: [
-            'Wireless control',
-            'Turn off devices in an emergency',
-            'Surge protection',
-            'Energy monitoring',
-            'Color LED ring displays energy usage',
-            'All countries',
-            'Secure communication - AES 128'
-          ],
-          learnMore: '//fantemhome.en.alibaba.com'
-        },
-        {
-          title: 'Doorbell',
-          subtitle: 'Connecting indoor and outdoor security.',
-          description: 'Every press of Doorbell\'s outdoor button notifies your connected home that someone is at the door, allowing you to receive notifications, a chime in the home, and to activate any devices attached to your Z-Wave system.',
-          icons: [],
-          img: require('@/assets/images/20-Doorbell.png'),
-          style: 'padding: 15px 0',
-          productHighlights: [
-            'Notifications',
-            '8 pre loaded chimes',
-            '40 - 80dB alerts',
-            'Remote: Long battery life 2 years'
-          ],
-          learnMore: '//fantemhome.en.alibaba.com'
-        },
-        {
           title: 'Siren',
           subtitle: 'Sound the alarm. Keep connected.',
           description: 'Siren has been crafted to keep you safe and secure when you\'re home. Connect your other devices to keep you alert to situations important for your unique needs.',
@@ -618,8 +623,24 @@ export default {
             'Visual alerts via 3 powerful LEDs',
             'Emergency backup',
             'Totally wireless',
-            'Secure communication - AES 128',
-            '150m range'
+            '150m range',
+            'Secure communication - AES 128'
+          ],
+          learnMore: '//fantemhome.en.alibaba.com'
+        },
+        {
+          title: 'Doorbell',
+          subtitle: 'Connecting indoor and outdoor security.',
+          description: 'Fantem Doorbell gives you alerts when you need them. Working in conjunction with your entire Z-Wave system to play one of 8 preset sounds when the remote is pressed, a door/window has been opened, motion has been detected and more.',
+          icons: [],
+          img: require('@/assets/images/22-Doorbell.png'),
+          style: 'padding: 15px 0',
+          productHighlights: [
+            'Notifications',
+            '8 pre loaded chimes',
+            '40 - 80dB alerts',
+            'Remote: Long battery life 2 years',
+            'Works with up to three remotes'
           ],
           learnMore: '//fantemhome.en.alibaba.com'
         },
@@ -628,7 +649,7 @@ export default {
           subtitle: 'Extend your smart home signal.',
           description: 'Range Extender is a Z-Wave mesh network repeater which can extend the range of communication between Z-Wave products and assist other devices to reach each other in your Z-Wave network.',
           icons: [],
-          img: require('@/assets/images/22-Range-Extender.png'),
+          img: require('@/assets/images/23-Range-Extender.png'),
           style: 'padding: 15px 0',
           productHighlights: [
             'Repeats wireless signals',
@@ -645,7 +666,7 @@ export default {
           subtitle: 'The heart of your Z-Wave network.',
           description: 'Z-Wave USB Hub is a self-powered Z-Wave USB adapter with remote network creation capabilities (independent from external power and host microprocessor). By being able to remotely include/remove Z-Wave devices, this greatly simplifies Z-Wave network installation.',
           icons: [],
-          img: require('@/assets/images/23-Z-Stick.png'),
+          img: require('@/assets/images/24-Z-Stick.png'),
           productHighlights: [
             'Simple to install',
             'Portable',
@@ -662,7 +683,7 @@ export default {
           subtitle: 'Take full control of your home entertainment.',
           description: 'IR Blaster allows you to control any IR enabled device including entertainment systems, TV sets, video consoles, AC units and other popular devices. First teach IR Blaster by letting it learn your original controllers IR commands, then control your IR device through the Blaster.',
           icons: [],
-          img: require('@/assets/images/24-TV-IR-Blaster.png'),
+          img: require('@/assets/images/25-TV-IR-Blaster.png'),
           productHighlights: [
             '360º radius',
             'Ability to learn IR devices (TV, AC, audio system)',
@@ -676,20 +697,20 @@ export default {
           subtitle: 'Illuminate your life.',
           description: 'RGB Controller is a LED Strip controller used to control a LED strip (on/off/dim/colour change) via wireless Z-Wave commands.',
           icons: [],
-          img: require('@/assets/images/25-RGBW-Controller.png'),
+          img: require('@/assets/images/26-RGBW-Controller.png'),
           productHighlights: [
             'Low power consumption',
-            'Supports different modes (sunset, sunrise, etc)',
+            'Supports different modes (sunset, sunrise, etc.t)',
             'Secure communication - AES 128'
           ],
           learnMore: '//fantemhome.en.alibaba.com'
         },
         {
           title: 'Smart Bulb',
-          subtitle: 'Any color.Any white.All in one perfect light.',
+          subtitle: 'Any color. Any white. All in one perfect light.',
           description: 'Day light. Candle light. Party lights. Whatever the mood, whatever the setting, whatever the time of day, Smart Bulb is ready to light a room with the perfect shade of light. ',
           icons: [],
-          img: require('@/assets/images/26-Bulb.png'),
+          img: require('@/assets/images/27-Bulb.png'),
           style: 'padding: 15px 0',
           productHighlights: [
             '16 million colors',

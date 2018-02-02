@@ -13,7 +13,7 @@
           <span></span>
         </div>
         <div class="nav-right nav-menu" id="navMenu" :class="{'is-active': isActive}">
-          <a v-for="(menu, key) in menus" :key="key" class="nav-item" :href="menu.link">
+          <a v-for="(menu, key) in menus" :key="key" class="nav-item" :href="menu.link" target="_blank">
             <span class="icon">
               <i :class="menu.icon"></i>
             </span>
@@ -183,7 +183,7 @@ export default {
         {
           icon: 'fa fa-file-text-o',
           text: 'e-catalogue',
-          link: '****.pdf'
+          link: 'E-catalogue-2018-02-02.pdf'
         },
         {
           icon: 'fa fa-envelope-o',
