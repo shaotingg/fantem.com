@@ -183,7 +183,7 @@ export default {
         {
           icon: 'fa fa-file-text-o',
           text: 'e-catalogue',
-          link: 'E-catalogue-2018-02-02.pdf'
+          link: '/E-catalogue-2018-02-02.pdf'
         },
         {
           icon: 'fa fa-envelope-o',
