@@ -578,7 +578,7 @@ export default {
         {
           title: 'Smart Socket',
           subtitle: 'Make any outlet smart.',
-          description: 'Smart Plug is a device that lets you wirelessly control whatever is plugged into it. Control the smart plug from a smart phone, remote, automation schedule or the power outlet itself. Now your wall socket is smarter and connected.',
+          description: 'Smart Socket is a device that lets you wirelessly control whatever is plugged into it. Control the smart plug from a smart phone, remote, automation schedule or the power outlet itself. Now your wall socket is smarter and connected.',
           icons: [],
           img: require('@/assets/images/19-Smart-Socket.png'),
           style: 'padding: 25px 0',
