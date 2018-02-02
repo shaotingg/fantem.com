@@ -45,7 +45,7 @@
                 <span>{{icon}}</span>
               </div>
             </div>
-            <p class="highlights">Product Highlights:</p>
+            <p class="highlights">Product highlights:</p>
             <ul>
               <li v-for="highlight in item.productHighlights" :key="highlight.id">
                 {{highlight}}  
@@ -55,7 +55,7 @@
               <p class="title">{{item.sencondary.title}}</p>
               <p class="subtitle">{{item.sencondary.subtitle}}</p>
               <p class="desc">{{item.sencondary.description}}</p>
-              <p class="highlights">Product Highlights:</p>
+              <p class="highlights">Product highlights:</p>
               <ul>
                 <li v-for="highlight in item.sencondary.productHighlights" :key="highlight.id">
                   {{highlight}}  
@@ -274,7 +274,7 @@ export default {
             'Adjustable motion sensitivity',
             'Secure communication - AES 128'
           ],
-          learnMore: '//1688.com'
+          learnMore: '//fantemhome.en.alibaba.com'
         },
         {
           title: 'Multi Sensor (3-in-1)',
@@ -293,11 +293,11 @@ export default {
             'Adjustable motion sensitivity',
             'Secure communication - AES 128'
           ],
-          learnMore: '//1688.com'
+          learnMore: '//fantemhome.en.alibaba.com'
         },
         {
           title: 'Recessor',
-          subtitle: 'Elegantly hide MultiSensor on any surface.',
+          subtitle: 'Elegantly hide sensors on any surface.',
           description: 'Multi Sensor Recessor is used in conjuction with the Multi Sensor 6-in-1/3-in-1 as a mounting accessory. Secure your Multi Sensor to a ceiling or flat wall.',
           icons: [],
           img: require('@/assets/images/3-Multisensor-Recessor.png'),
@@ -308,7 +308,7 @@ export default {
             'Ceiling and Wall',
             '30º adjustable angle'
           ],
-          learnMore: '//1688.com'
+          learnMore: '//fantemhome.en.alibaba.com'
         },
         {
           title: 'Door/Window Sensor Fin',
@@ -320,19 +320,17 @@ export default {
             'Notifications',
             'Extremely slim',
             'Any door/ window',
-            'Highly accurate - Within 2.2cm of magnet',
-            'Long battery life',
+            'Highly accurate',
             'USB charger',
             'Easy installation',
-            '150m wireless range',
             'Secure communication - AES 128'
           ],
-          learnMore: '//1688.com'
+          learnMore: '//fantemhome.en.alibaba.com'
         },
         {
           title: 'Door/Window Sensor Pebble',
           subtitle: 'Monitor door access',
-          description: 'Door/Window Sensor Pebble provides your Z-Wave network with the intelligence required for a modern home automation and security system. And it does it all in a smaller, more elegant design crafted to suit any home\'s decor',
+          description: 'Door/Window Sensor Pebble provides your Z-Wave network with the intelligence required for a modern home automation and security system. And it does it all in a smaller, more elegant design crafted to suit any home\'s decor.',
           icons: [],
           img: require('@/assets/images/5-DWSensor-Gen.png'),
           style: 'padding: 15px 0',
@@ -340,51 +338,52 @@ export default {
             'Simple installation',
             'Notifications',
             'Anti-tamper detection',
-            'Long battery life',
+            '1-year battery life',
             'Any doors/windows',
             'Secure communication - AES 128'
           ],
-          learnMore: '//1688.com'
+          learnMore: '//fantemhome.en.alibaba.com'
         },
         {
           title: 'Dry Contact Sensor',
           subtitle: 'Monitor heating and water level systems.',
-          description: 'Detect a variety of dry contact signals. You just need to connectt he external sensor to something such as the water level sensor, a dry contact switch, a dry contact relay and so on.',
+          description: 'Detect a variety of dry contact signals. You just need to connect he external sensor to something such as the water level sensor, dry contact switch, dry contact relay and so on.',
           icons: [],
           img: require('@/assets/images/6-Dry-Contact.png'),
           productHighlights: [
             'Enables Z-Wave communication for a wired dry contact',
             'Terminal accepts wire sizes from 18Awg to 20Awg',
             'Z-wave Plus certified for wide compatibility',
-            'Supports over the air (OTA) for firmwave updates t'
+            'Supports over the air (OTA) for firmwave updates'
           ],
-          learnMore: '//1688.com'
+          learnMore: '//fantemhome.en.alibaba.com'
         },
         {
           title: 'Water Sensor',
           subtitle: 'Stop leaks before they happen.',
-          description: 'Water Sensor helps you monitor for water leaks and floods then prevent them before they happen. Super accurate, it\'s capatable of measuring as little as 0.003% of an inch of water.',
+          description: 'Water Sensor helps you monitor for water leaks and floods, preventing them before they happen. Super accurate, it\'s capatable of measuring as little as .0008%mm of water.',
           icons: [],
           img: require('@/assets/images/7-WaterSensor.png'),
           productHighlights: [
             'Protect againt leaks and floods',
-            'Detect 0.003% of an inch of wayer',
+            'Detect .0008mm of wayer',
             '1-year battery life',
             'Secure communication - AES 128'
           ],
-          learnMore: '//1688.com'
+          learnMore: '//fantemhome.en.alibaba.com'
         },
         {
           title: 'Water Sensor Pro',
-          subtitle: 'Prevent a little leak from becoming a big problem',
-          description: 'More homes are damaged each year by small leaks than by devastating fires or burglaries.Water Sensor Pro changes that, using Z-Wave Plus to silently monitor areas of your home at risk of water and then taking action when the worst occurs.',
+          subtitle: 'Prevent a little leak from becoming a big problem.',
+          description: 'More homes are damaged each year by small leaks than by devastating fires or burglaries.Water Sensor Pro changes that, using Z-Wave Plus to silently monitor areas of your home at risk of water and taking action if the worst occurs.',
           icons: [],
           img: require('@/assets/images/8-WaterSensorPro.png'),
           productHighlights: [
             'Dectect leaks, bursts, floods and overflows',
             'Get instant alerts',
-            'Auto turn off power*',
-            'Additional vibration and temperature sensor'
+            'Small and discrete, isn\'t an eyeore',
+            'Tamper protection',
+            'Additional temperature sensor'
           ],
           sencondary: {
             title: 'Water Sensor Pro Dock',
@@ -393,10 +392,10 @@ export default {
             productHighlights: [
               'Monitor 2 areas',
               'Monitor an area within lasso sensor',
-              'Charge the Water Sensor Pro'
+              'Power supply the Water Sensor Pro'
             ]
           },
-          learnMore: '//1688.com'
+          learnMore: '//fantemhome.en.alibaba.com'
         },
         {
           title: 'Home Energy Meter',
@@ -407,12 +406,11 @@ export default {
           style: 'padding: 25px 0',
           productHighlights: [
             '200amp max measurement',
-            '99% accuracy',
-            '492 feet wireless range',
+            'Accurate within 5%',
             'IP43 for outdoor use',
             'Secure communication - AES 128'
           ],
-          learnMore: '//1688.com'
+          learnMore: '//fantemhome.en.alibaba.com'
         },
         {
           title: 'In-Wall Dimmer',
@@ -425,7 +423,7 @@ export default {
             'Works with existing light switch',
             'Smooth dimming',
             'Extremely small',
-            'Supports: LED, CFL, fluorescent, incandescent and halogen lighting',
+            'Supports: Adjustable LED, CFL, fluorescent, incandescent and halogen lighting',
             'Surge and overload protection',
             'Secure communication - AES 128'
           ],
@@ -436,11 +434,10 @@ export default {
             productHighlights: [
               'Supports LED and CFL lighting',
               'Stop dimmed lights flickering',
-              'Less than 4 watts energy consumption',
               'Extremely small'
             ]
           },
-          learnMore: '//1688.com'
+          learnMore: '//fantemhome.en.alibaba.com'
         },
         {
           title: 'In-Wall Shutter',
@@ -449,12 +446,11 @@ export default {
           icons: [],
           img: require('@/assets/images/11-In-Wall-Shutter.png'),
           productHighlights: [
-            'With energy metering function',
             'Remote control (up/down/stop)',
-            'Overload and overheat protection',
+            'Overload and protection',
             'Secure communication - AES 128'
           ],
-          learnMore: '//1688.com'
+          learnMore: '//fantemhome.en.alibaba.com'
         },
         {
           title: 'In-Wall Switch',
@@ -470,7 +466,7 @@ export default {
             'Perfectly safe (inbuilt surge protection)',
             'Secure communication - AES 128'
           ],
-          learnMore: '//1688.com'
+          learnMore: '//fantemhome.en.alibaba.com'
         },
         {
           title: 'In-Wall Small Switch',
@@ -487,12 +483,12 @@ export default {
             'Perfectly safe (inbuilt surge protection)',
             'Secure communication - AES 128'
           ],
-          learnMore: '//1688.com'
+          learnMore: '//fantemhome.en.alibaba.com'
         },
         {
           title: 'In-Wall Switch (Dual)',
           subtitle: 'More convenient lighting control.',
-          description: 'In-Wall Switch (Dual allows on/off control of any wall switches, including lights or power outlets. It can connect to 2 external switches to control the loads independently.',
+          description: 'In-Wall Switch (Dual) allows on/off control of any wall switch, including lights or power outlets. It can connect to 2 external switches to control the loads independently.',
           icons: [],
           img: require('@/assets/images/12-In-Wall-Smart-Switch.png'),
           productHighlights: [
@@ -503,7 +499,7 @@ export default {
             'Perfectly safe (inbuilt surge protection)',
             'Secure communication - AES 128'
           ],
-          learnMore: '//1688.com'
+          learnMore: '//fantemhome.en.alibaba.com'
         },
         {
           title: 'In-Wall Smart Switch (Dual)',
@@ -513,19 +509,19 @@ export default {
           img: require('@/assets/images/11-In-Wall-Shutter.png'),
           productHighlights: [
             'Control from anywhere',
-            'Control sockets or switches',
+            'Power sockets or switches',
             'Energy metering',
             'Automation and scheduling',
             'Extremely small',
             'Perfectly safe (inbuilt surge protection)',
             'Secure communication - AES 128'
           ],
-          learnMore: '//1688.com'
+          learnMore: '//fantemhome.en.alibaba.com'
         },
         {
           title: 'Touch Switch',
           subtitle: 'Enhance control of your smart switch.',
-          description: 'The Touch Switch works in conjuction with any in-wall product to replace your existing wall switch with a cool and attractive touch panel. Simply touch or slide to turn on/off/dim the lights, control your fan, open/close curtains, and start scenes.',
+          description: 'The Touch Switch works in conjuction with any in-wall product to replace your existing wall switch with a attractive and responsive touch panel. Simply touch or slide to turn on/off/dim the lights, control your fan, open/close curtains, and start scenes.',
           icons: [],
           img: require('@/assets/images/16-Touch-Switch.png'),
           style: 'padding: 25px 0',
@@ -540,28 +536,28 @@ export default {
             'Click / double click / long press / slide / gesture',
             'Capacitive touch'
           ],
-          learnMore: '//1688.com'
+          learnMore: '//fantemhome.en.alibaba.com'
         },
         {
           title: 'Heavy Duty Smart Switch',
           subtitle: 'Energy monitor and smart switch.',
-          description: 'Control your heavy duty appliances, turn them on or off remotely or via schedule. Monitor how much your high power appliance is costring you in real time. Works with appliances that require as much as 40 amps.',
+          description: 'Control your heavy duty appliances, turn them on or off remotely or via schedule. Monitor how much your high power appliance is costing you in real time. Works with appliances that require as much as 40 amps.',
           icons: [],
           img: require('@/assets/images/17-Heavy-Duty-Smart-Switch.png'),
           style: 'padding: 15px 0',
           productHighlights: [
-            'Secure communication - AES 128',
             'Remotely turn load on/off',
             'Report energy usage in watts or kWh',
             'Bear up to 40 amps current of resistor loads',
-            'Overload protection'
+            'Overload protection',
+            'Secure communication - AES 128'
           ],
-          learnMore: '//1688.com'
+          learnMore: '//fantemhome.en.alibaba.com'
         },
         {
-          title: 'Wallmote',
+          title: 'Wall Switch',
           subtitle: '2 or 4 shortcuts when you need them.',
-          description: 'Wallmote is an intelligent Z-Wave remote controller that can be mounted on a wall. It has 2/4 touch buttons to control your Z-Wave devices via touching, long pressing or sliding the button regions. Its surface has a RGB LED to indicate the button actions also accompanied by an optional beep and vibration.',
+          description: 'Wall Switch is an intelligent Z-Wave remote controller that can be mounted on a wall. It has 2/4 touch buttons to control your Z-Wave devices via touching, long pressing or sliding the button regions. Its surface has a RGB LED to indicate the button actions also accompanied by an optional beep and vibration.',
           icons: [],
           img: require('@/assets/images/18-Wallmote.png'),
           style: 'padding: 25px 0',
@@ -576,26 +572,25 @@ export default {
             'Haptic feedback',
             'Secure communication - AES 128'
           ],
-          learnMore: '//1688.com'
+          learnMore: '//fantemhome.en.alibaba.com'
         },
         {
           title: 'Smart Plug',
           subtitle: 'Make any outlet smart.',
-          description: 'Smart Plug is a smart plug that lets you wirelessly control whatever is plugged into it. You can do that via remote control or a smart phone, and from an automation schedule or from the power outlet itself. Now your wall socket is smarter and connected.',
+          description: 'Smart Plug is a device that lets you wirelessly control whatever is plugged into it. Control the smart plug from a smart phone, remote, automation schedule or the power outlet itself. Now your wall socket is smarter and connected.',
           icons: [],
           img: require('@/assets/images/19-Smart-Plug.png'),
           style: 'padding: 25px 0',
           productHighlights: [
-            'Make any outlet smart',
             'Wireless control',
             'Turn off devices in an emergency',
             'Surge protection',
             'Energy monitoring',
-            '16 million color LED ring',
+            'Color LED ring displays energy usage',
             'All countries',
             'Secure communication - AES 128'
           ],
-          learnMore: '//1688.com'
+          learnMore: '//fantemhome.en.alibaba.com'
         },
         {
           title: 'Doorbell',
@@ -606,17 +601,16 @@ export default {
           style: 'padding: 15px 0',
           productHighlights: [
             'Notifications',
-            '5 pre loaded chimes',
-            'Upload up to 100 MP3 tones',
+            '8 pre loaded chimes',
             '40 - 80dB alerts',
-            'Long battery life - 3 years'
+            'Remote: Long battery life 2 years'
           ],
-          learnMore: '//1688.com'
+          learnMore: '//fantemhome.en.alibaba.com'
         },
         {
           title: 'Siren',
           subtitle: 'Sound the alarm. Keep connected.',
-          description: 'Siren from Fantem has been crafted to keep you safe and secure when you\'re home. The wellbeing of you and your family is our focus.',
+          description: 'Siren has been crafted to keep you safe and secure when you\'re home. Connect your other devices to keep you alert to situations important for your unique needs.',
           icons: [],
           img: require('@/assets/images/21-Siren.png'),
           productHighlights: [
@@ -627,7 +621,7 @@ export default {
             'Secure communication - AES 128',
             '150m range'
           ],
-          learnMore: '//1688.com'
+          learnMore: '//fantemhome.en.alibaba.com'
         },
         {
           title: 'Range Extender',
@@ -644,7 +638,7 @@ export default {
             'Fully compatible with all Z-Wave devices',
             'Secure communication - AES 128'
           ],
-          learnMore: '//1688.com'
+          learnMore: '//fantemhome.en.alibaba.com'
         },
         {
           title: 'Z-Wave USB Hub',
@@ -657,24 +651,25 @@ export default {
             'Portable',
             'Small',
             'Zensys API',
-            '232 Z-Wave Devices',
+            'Supports up to 232 Z-Wave devices',
+            'RF PA/LNA supported',
             'Secure communication - AES 128'
           ],
-          learnMore: '//1688.com'
+          learnMore: '//fantemhome.en.alibaba.com'
         },
         {
           title: 'IR Blaster',
           subtitle: 'Take full control of your home entertainment.',
-          description: 'IR Blaster allows you to control any IR enabled device. Entertainment systems, TV sets, video consoles, AC units and other popular devices. First teach IR Blaster by letting it learn your original controllers IR commands, then control your IR device through the Blaster.',
+          description: 'IR Blaster allows you to control any IR enabled device including entertainment systems, TV sets, video consoles, AC units and other popular devices. First teach IR Blaster by letting it learn your original controllers IR commands, then control your IR device through the Blaster.',
           icons: [],
           img: require('@/assets/images/24-TV-IR-Blaster.png'),
           productHighlights: [
             '360º radius',
             'Ability to learn IR devices (TV, AC, audio system)',
-            'Secure communication - AES 128',
-            '8m IR reach'
+            '8m IR reach',
+            'Secure communication - AES 128'
           ],
-          learnMore: '//1688.com'
+          learnMore: '//fantemhome.en.alibaba.com'
         },
         {
           title: 'RGBW Controller',
@@ -687,12 +682,12 @@ export default {
             'Supports different modes (sunset, sunrise, etc)',
             'Secure communication - AES 128'
           ],
-          learnMore: '//1688.com'
+          learnMore: '//fantemhome.en.alibaba.com'
         },
         {
           title: 'Smart Bulb',
           subtitle: 'Any color.Any white.All in one perfect light.',
-          description: 'Day light. Candle light. Party lights. Whatever the mood, whatever the setting, whatever the time of day, Smart Bulb is ready to light a room with the perfect shade of light. Plug it in to turn any light in your home into a smart light. From there, Smart Bulb will fill your room with perfect light because Smart Bulb has been designed with 16 million, perfect shades of light.',
+          description: 'Day light. Candle light. Party lights. Whatever the mood, whatever the setting, whatever the time of day, Smart Bulb is ready to light a room with the perfect shade of light. ',
           icons: [],
           img: require('@/assets/images/26-Bulb.png'),
           style: 'padding: 15px 0',
@@ -700,13 +695,11 @@ export default {
             '16 million colors',
             'Daylight',
             'Warm light',
-            'All whites 2580K - 4745K',
-            '50,000 hours',
-            '70 Watts of energy usage',
-            '180º beam of light',
-            'Indoors or outdoors'
+            'Lasts 30,000 hours',
+            '9 Watts of energy usage',
+            '180º beam of light'
           ],
-          learnMore: '//1688.com'
+          learnMore: '//fantemhome.en.alibaba.com'
         }
       ]
     }
