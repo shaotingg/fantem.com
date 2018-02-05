@@ -8,7 +8,7 @@
       <div class="left">
         <div class="inner">
           <div class="textContent" v-if="index%2 == 0">
-            <p class="title">{{index+1}}. {{item.title}}</p>
+            <p class="title">{{item.title}}</p>
             <p class="subtitle">{{item.subtitle}}</p>
             <div class="productImg" :style="item.style">
               <img :src="item.img">
@@ -33,7 +33,7 @@
       <div class="right" :class="{hasSecondary: item.sencondary}">
         <div class="inner">
           <div class="textContent" v-if="index%2 == 1">
-            <p class="title">{{index+1}}. {{item.title}}</p>
+            <p class="title">{{item.title}}</p>
             <p class="subtitle">{{item.subtitle}}</p>
             <div class="productImg" :style="item.style">
               <img :src="item.img">
@@ -277,7 +277,7 @@ export default {
           learnMore: '//fantemhome.en.alibaba.com'
         },
         {
-          title: 'Multi Sensor (3-in-1)',
+          title: 'Motion Sensor (3-in-1)',
           subtitle: 'The essential sensors.',
           description: 'Motion Sensor is three sensors in one: motion, temperature and ambient light. It can report the monitored data to in real time. It also has anti-dismantle protection with a built-in vibration sensor.',
           icons: [
