@@ -403,7 +403,7 @@ export default {
         {
           title: 'Home Energy Meter',
           subtitle: 'Know your utility costs.',
-          description: 'Installed in an electricity box, your Home Energy Meter will monitor the total amount of electricity your home uses with accuracy and speed. Using a wireless Z-Wave connection, it\'ll then feed the data it records back to your smart home\'s gateway. In near real-time you\'ll have a full understanding of how much ectricity you use and when you use it.',
+          description: 'Installed in an electricity box, your Home Energy Meter will monitor the total amount of electricity your home uses with accuracy and speed. Using a wireless Z-Wave connection, it\'ll then feed the data it records back to your smart home\'s gateway. In near real-time you\'ll have a full understanding of how much electricity you use and when you use it.',
           icons: [],
           img: require('@/assets/images/9-Home-Energy-Meter.png'),
           style: 'padding: 25px 0',
@@ -524,7 +524,7 @@ export default {
         {
           title: 'Touch Switch',
           subtitle: 'Enhance control of your smart switch.',
-          description: 'The Touch Switch works in conjuction with any in-wall product to replace your existing wall switch with a attractive and responsive touch panel. Simply touch or slide to turn on/off/dim the lights, control your fan, open/close curtains, and start scenes.',
+          description: 'The Touch Switch works in conjuction with any in-wall product to replace your existing wall switch with an attractive and responsive touch panel. Simply touch or slide to turn on/off/dim the lights, control your fan, open/close curtains, and start scenes.',
           icons: [],
           img: require('@/assets/images/16-Touch-Switch.png'),
           style: 'padding: 25px 0',
@@ -700,7 +700,7 @@ export default {
           img: require('@/assets/images/26-RGBW-Controller.png'),
           productHighlights: [
             'Low power consumption',
-            'Supports different modes (sunset, sunrise, etc.t)',
+            'Supports different modes (sunset, sunrise, etc)',
             'Secure communication - AES 128'
           ],
           learnMore: '//fantemhome.en.alibaba.com'
