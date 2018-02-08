@@ -1,30 +1,45 @@
 <template>
-    <form action="https://formsubmit.io/send/4be8a03e-7fbb-4f21-9e65-f815b91b8524" class="getMail" :class="{'has-shadow': hasShadow}" method="POST">
-        <div class="field has-addons">
-            <p class="control">
-                <input type="email" class="input" :class="{'is-small': isSmall}" name="email" placeholder="Enter your e-mail" required>
-            </p>
-            <p class="control">
-                <input type="hidden" name="_redirect" id="name" value="//www.fantem.com/en#thanks">
-                <input type="submit" class="button is-primary" :class="{'is-small': isSmall}" value="Start now">
-            </p>
-        </div>
-    </form>
+  <form action="https://formsubmit.io/send/4be8a03e-7fbb-4f21-9e65-f815b91b8524" class="getMail" method="POST">
+    <div class="field">
+      <p class="control">
+        <input type="email" class="input" name="email" placeholder="Enter email" required>
+      </p>
+      <p class="control">
+        <input type="hidden" name="_redirect" id="name" value="//www.fantem.com/en#thanks">
+        <input type="submit" class="button is-primary" value="Subscribe">
+      </p>
+    </div>
+  </form>
 </template>
 
 <style lang="stylus">
+$purple = #512DA8
 .getMail
-    display: inline-block
-.has-shadow
-    border-bottom: 1px solid rgba(0,0,0,.2)
-    box-shadow: 0 1px 5px rgba(0,0,0,.1)
+  display: block
+  .control
+    text-align: inherit
+    input[type='email']
+      width: 80%
+      box-shadow: none
+      border: none
+      border-radius: 0
+      padding: 0
+      text-align: inherit
+      background: transparent
+      border-bottom: 1px solid $purple
+    input[type='submit']
+      width: 80%
+      height: 45px
+      color: #000
+      font-weight: bold
+      border-radius: 0
+      transition: all .8s
+      background: transparent
+      border: 1px solid $purple
+      &:hover
+        color: #fff
+        background: $purple
+        transition: all .8s
+    &+.control
+      margin-top: 20px
 </style>
-
-<script>
-  export default {
-    props: {
-      hasShadow: Boolean,
-      isSmall: Boolean
-    }
-  }
-</script>

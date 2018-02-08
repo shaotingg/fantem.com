@@ -73,7 +73,6 @@
 <style lang="stylus">
 .product
   position: relative
-  margin-top: 10rem
   &__pin
     position: absolute
     z-index: 1
