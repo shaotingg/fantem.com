@@ -8,7 +8,7 @@
       </div>
       <div class="column is-half">
         <div class="item-title">
-          <p class="item-head">Become a <br/><strong>Distributor</strong></p>
+          <p class="item-head">Become an Oomi <br/><strong>Distributor</strong></p>
           <p class="item-desc">
             Global opportunities for you.<br/>
             Register in your language.
@@ -31,9 +31,9 @@
 </template>
 
 <style lang="stylus">
-$purple = #512DA8
+$primary = #3f444a
 .is-opp
-  background: #f1f1f1
+  background: #ecf4f9
   @media (max-width: 768px)
     padding: 40px 0
   >.columns
@@ -44,18 +44,20 @@ $purple = #512DA8
         justify-content: space-around
         .item-title
           .item-head
-            color: $purple
+            color: $primary
             font-size: 23px
             strong
-              color: $purple
+              color: $primary
               font-size: 38.5px
               line-height: 0
+              font-weight: normal
               text-transform: uppercase
-              font-family: 'aileronbold'
+              font-family: 'aileronlight'
           .item-desc
               color: #4d4d4d
               font-size: 20px
               line-height: 24px
+              margin-top: 20px
               text-shadow: 0px 0px
               font-family: 'aileronlight'
         .item-link
@@ -69,11 +71,12 @@ $purple = #512DA8
             background: none
             text-align: center
             font: 15px/44px 'aileronbold'
-            border: 1px solid $purple
+            border: 1px solid $primary
             transition: all .3s
             &:hover
               color: #fff
-              background: $purple
+              border: 1px solid #f26f21
+              background: #f26f21
               transition: all .3s
     @media (max-width: 768px)
       position: relative
