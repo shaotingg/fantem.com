@@ -1,6 +1,6 @@
 <template>
   <section class="is-fantem" id="section-fantem">
-    <div class="columns">
+    <div class="columns is-gapless">
       <div class="column is-half">
         <div class="item-img"></div>
       </div>

@@ -71,9 +71,15 @@
         let anchorTop = document.getElementById(`section-${name}`).offsetTop - 56
         cancelAnimationFrame(timer)
         timer = requestAnimationFrame(function fn () {
-          let oTop = document.documentElement.scrollTop
+          let oTop = document.documentElement.scrollTop || document.body.scrollTop
           if (oTop < anchorTop) {
-            document.documentElement.scrollTop = oTop + step <= anchorTop ? oTop + step : anchorTop
+            let to = oTop + step <= anchorTop ? oTop + step : anchorTop
+            if (document.documentElement.scrollTop) {
+              document.documentElement.scrollTop = to
+            }
+            if (document.body.scrollTop) {
+              document.body.scrollTop = to
+            }
             timer = requestAnimationFrame(fn)
           } else {
             cancelAnimationFrame(timer)
