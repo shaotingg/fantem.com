@@ -3,7 +3,7 @@
     <div class="columns">
       <div class="column is-half">
         <div class="item-img has-text-right">
-          <img :src="require('@/assets/images/Distributor-web.jpg')">
+          <img :src="require('@/assets/images/Distributor-web.png')">
         </div>
       </div>
       <div class="column is-half">
@@ -33,6 +33,9 @@
 <style lang="stylus">
 $purple = #512DA8
 .is-opp
+  background: #f1f1f1
+  @media (max-width: 768px)
+    padding: 40px 0
   >.columns
     >.column
       &:nth-child(2)
@@ -57,7 +60,7 @@ $purple = #512DA8
               font-family: 'aileronlight'
         .item-link
           @media (max-width: 768px)
-            text-align: center
+            text-align: left
           a
             display: inline-block
             color: #000
@@ -82,7 +85,7 @@ $purple = #512DA8
           margin-left: -50%
           transform: translateY(-50%)
         &:nth-child(2)
-          margin-left: 50%
+          margin-left: 45%
           .item-title
             .item-head
               font-size: 18px
@@ -91,7 +94,7 @@ $purple = #512DA8
             .item-desc
               font-size: 14px
           .item-link a
-            width: 100%
+            width: 75%
             height: 30px
             font: 12px\/@height 'aileronbold'
 </style>

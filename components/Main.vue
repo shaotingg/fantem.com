@@ -17,8 +17,6 @@ section
   &.is-opp
   &.is-fantem
     overflow: hidden
-    @media (max-width: 768px)
-      padding: 40px 0
 </style>
 
 <script>
