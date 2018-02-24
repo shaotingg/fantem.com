@@ -86,7 +86,7 @@ $purple = #512DA8
     .contents
       display: flex
       flex-direction: column
-      justify-content: space-between
+      justify-content: center
       background: #f3f3f3
       height: 100%
       padding: 57px 14% 45px
