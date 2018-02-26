@@ -31,9 +31,10 @@
 </template>
 
 <style lang="stylus">
-$primary = #3f444a
+$primary = #fff
 .is-opp
-  background: #ecf4f9
+  background: url('../assets/images/Learn-web.jpg') no-repeat fixed center/cover
+  background-image: image-set(url('../assets/images/Learn-web.jpg') 1x,url('../assets/images/Learn-mobile.jpg') 2x)
   @media (max-width: 768px)
     padding: 40px 0
   >.columns
@@ -54,7 +55,7 @@ $primary = #3f444a
               text-transform: uppercase
               font-family: 'aileronlight'
           .item-desc
-              color: #4d4d4d
+              color: #fff
               font-size: 20px
               line-height: 24px
               margin-top: 20px
@@ -65,7 +66,7 @@ $primary = #3f444a
             text-align: left
           a
             display: inline-block
-            color: #000
+            color: #fff
             width: 224px
             height: 44px
             background: none
