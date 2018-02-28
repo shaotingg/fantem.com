@@ -34,24 +34,17 @@
         flex-direction: column
         justify-content: space-between
         align-content: flex-end
-        text-align: right
+        text-align: center
         padding: 50px 0
-        @media (max-width: 768px)
-          padding-right: 0
-          text-align: center
         .item-logo
           color: #000
           font-size: 47px
-          text-align: right
           margin-top: 12px
           text-transform: uppercase
           font-family: 'aileronlight'
           svg
             width: 224px
             height: 100%
-          @media (max-width: 768px)
-            padding-right: 0
-            text-align: center
         .item-link
           @media (max-width: 768px)
             &+.item-link
