@@ -23,7 +23,7 @@
 
 <style lang="stylus">
 .hero.is-header
-  background: url('../assets/images/background-dark.jpg') no-repeat
+  background: url('~/assets/images/background-dark.jpg') no-repeat
   background-size: cover
   position: relative
   overflow: hidden
