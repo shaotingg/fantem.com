@@ -200,7 +200,7 @@ export default {
         },
         {
           icon: 'fa fa-envelope-o',
-          text: 'sales1@fantem.com',
+          text: 'sales@fantem.com',
           link: 'mailto:sales@fantem.com'
         }
       ]
