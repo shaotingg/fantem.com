@@ -10,8 +10,7 @@ module.exports = {
       { rel: 'stylesheet', href: '//cdn.jsdelivr.net/npm/bulma/css/bulma.min.css' }
     ],
     script: [
-      { src: '//js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js' },
-      { src: '/geoRedirect.js' }
+      { src: '/geoip2.js' }
     ]
   },
   modules: [
