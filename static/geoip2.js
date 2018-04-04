@@ -125,7 +125,7 @@ var geoip2 = (function () {
     var that = this,
       param,
       request,
-      uri = '//' + (HOSTNAME || 'geoip-js.maxmind.com') + '/geoip/v2.1/' + this.type + '/me?',
+      uri = '//' + (undefined || 'geoip-js.maxmind.com') + '/geoip/v2.1/' + this.type + '/me?',
       httpParams = {
         referrer: location.protocol + '//' + 'localhost',
       };
