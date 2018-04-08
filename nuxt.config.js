@@ -10,6 +10,7 @@ module.exports = {
       { rel: 'stylesheet', href: '//cdn.jsdelivr.net/npm/bulma/css/bulma.min.css' }
     ],
     script: [
+      { src: '//pv.sohu.com/cityjson' },
       { src: '/geoip2.js' }
     ]
   },
