@@ -33,5 +33,7 @@ var geoip2 = (function () {
 //   console.log(error)
 // })
 if(/^[1-6][0-7][0-3]\d0[0-4]$/.test(returnCitySN.cid)){
-  window.location.href = '//www.fantem.cn'
+  if(location.pathname === '/') {
+    location.href = '//www.fantem.cn'
+  }
 }
