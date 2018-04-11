@@ -11,18 +11,12 @@
           <p class="item-head">Become an Oomi <br/><strong>Distributor</strong></p>
           <p class="item-desc">
             Global opportunities for you.<br/>
-            Register in your language.
+            Our Oomi Partner Portal operates globally.
           </p>
         </div>
         <div class="columns is-multiline">
           <div class="column item-link">
-            <a href="//partner.oomi.com/apply" target="_blank">English</a>
-          </div>
-          <div class="column item-link">
-            <a href="//partner.oomi.com/apply" target="_blank">中文</a>
-          </div>
-          <div class="column item-link">
-            <a href="//partner.oomi.com/apply" target="_blank">Português</a>
+            <a href="//partner.oomi.com/apply" target="_blank">Apply to become a partner</a>
           </div>
         </div>
       </div>
