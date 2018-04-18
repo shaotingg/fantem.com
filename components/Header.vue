@@ -29,7 +29,7 @@
             <span class="icon">
               <i :class="menu.icon"></i>
             </span>
-            {{menu.text}}
+            <span class="text" v-html="menu.text"></span>
           </a>
         </li>
       </ul>
