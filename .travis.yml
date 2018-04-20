@@ -1,8 +1,21 @@
+branches:
+  only:
+    - dev
 language: node_js
 node_js:
   - "8.9.4"
+cache:
+  directories:
+    - node_modules
 install:
   - yarn
+before_script:
+  - git config --global user.name "lerte"
+  - git config --global user.email "lerte@qq.com"
 script:
   - yarn build
-  - yarn deploy 
+after_success: |
+  if [ -n "$GITHUB_TOKEN" ]; then
+    cd "$TRAVIS_BUILD_DIR"
+    yarn deploy
+  fi
