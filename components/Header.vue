@@ -45,9 +45,8 @@
   &.isPositive .nav 
     .nav-item
       color: #000
-    .is-logo
-      svg g
-        fill: #000
+      svg *
+        fill: currentColor
     .nav-toggle span
       background-color: #000
   &.isNegative .nav 
@@ -67,6 +66,8 @@
       min-height: 3.5rem
       .nav-item
         color: #112843
+        svg *
+          fill: currentColor
       .nav-toggle span
         background-color: #112843
 .fadeInDown
@@ -176,6 +177,8 @@
     a
       color: #112843
       margin: .5rem
+      svg *
+        fill: currentColor
 </style>
 
 <script>
