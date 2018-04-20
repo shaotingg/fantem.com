@@ -1,0 +1,184 @@
+/**
+ * fullPage 2.4.6
+ * https://github.com/alvarotrigo/fullPage.js
+ * MIT licensed
+ *
+ * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ */
+
+.clearfix:after{ clear: both; content: "";display: block;}
+ul,li{ list-style:none; margin: 0; padding: 0;}
+
+
+img{display:block}
+.section1 img{ margin: 0 auto;}
+.section2 img{ width: 100%;}
+
+.section2 img{ width: 100%;}
+.section3 img{ width: 100%;}
+.section10 img{ margin: 0 auto; width: 90vw; padding: 5vw 0 0 0}
+.section11 img{ width: 50vw;border: solid 15px #fff;margin: 10vh auto 0 auto;}
+
+
+
+.section1{ background-image:url('../images/001-cover.jpg'); background-size:cover;
+    background-repeat:no-repeat;text-align: center; }
+.section2{}
+.section3{background-size:cover;text-align: center; }
+.section4{ padding: 0 4vw}
+.section9{ background-image:url('../images/bg-1.jpg');background-size:cover;text-align: center; }
+.section10{ background-image:url('../images/bg-2.jpg');background-size:cover;text-align: center; }
+.section11{ padding: 0 4vw;background-image:url('../images/bg-1.jpg');background-size:cover;text-align: center; }
+
+.section h3{ font-weight:400}
+.section2 h3{  padding: 1vh 0;color: #fff; text-align: center; background: #E66C27; width: 60vw; font-size: 1em; font-weight: 100;}
+.section3 h3{ padding: 1vh 0;color: #fff; text-align: center; background: #E66C27; width: 60vw; font-size: 1em; font-weight: 100;}
+.section4 h3{ text-align: left; margin:4vh 0 0 0; font-weight: 100; font-size: 1.5em; color: #E66C27;}
+.section4 h3 .s1{ display: none; font-weight: bold;}
+.section9 h3{ color: #fff; text-align: center; }
+.section10 h3{ color: #fff; text-align: center; }
+.section11 h3{ color: #fff; text-align: left; }
+
+
+.section h6{color: #6C6C6C;font-size: 1em; margin: 1em 0;font-weight:300;}
+.section4 h6{ position: relative; left: -120%; margin:3vh 0 0 0; }
+.section5 h6{ padding:0 4vw;margin-bottom: 1.5vh;}
+.section6 h6{ padding: 0 4vw;margin-bottom: 1.5vh;}
+
+.section { font-size: 50px ; }
+.section p{ text-align: left; font: 50px "Microsoft Yahei";  color: #6D6C6C;font-size: 0.7em; font-weight:250}
+.section1 p { padding: 50px 0 0 0; font-size: 1.5em;color: #fff;text-align: center; }
+.section2 p { position: relative; left: -120%;font-size: 0.7em; padding: 0 1em;text-indent: 2em;text-align:left;}
+.section3 p {position: relative; bottom: -120%;font-size: 0.7em; padding: 0 1em;text-indent: 2em; text-align:left;  }
+.section4 p { position: relative; left: -120%; font-size: 0.7em; text-align: left; font-weight: 100; color: #6D6C6C;}
+.section5 p {padding: 0 4vw;margin-top:0;}
+.section6 p {padding: 0 4vw;margin-top:0;}
+.section9 p { position: relative; left: -120%;font-size: 0.7em; padding: 0 4vw; color: #fff;text-indent: 2em; font-weight: 100;text-align:left;}
+.section10 p { position: relative; bottom: -120%;font-size: 0.7em; padding: 0 4vw; color: #fff;text-indent: 2em; font-weight: 100;text-align:left;}
+.section11 p { color: #fff; font-size:0.75em; font-weight: 100;}
+
+
+.section2 .icon-group{position: relative; left: -120%;}
+.section3 .icon-group{position: relative; bottom: -120%;}
+
+
+.icon-img{position:relative; left: -120%;}
+.svg-c{text-align: center; width: 100%;padding: 0 0 1vh 0}
+.svg-l{ float: left; width: 50%;}
+.svg-r{  float: right; width: 50%;}
+
+
+
+.them{ text-align: left;}
+.them .them-title{ padding: 0}
+
+
+.product-list{padding: 0 4vw;}
+.product-one{ padding:0 0 3vh 0; }
+.product-one .title{    text-transform: uppercase; font-size: 0.7em; color:#F26F21; font-weight: 300; text-decoration: }
+.product-one img{ float: left; width: 40vw; height: 40vw;padding: 0 4vw 0 0;}
+.product-one h6{ margin:10px 0 0 0;}
+
+
+.section2 .icon-group,.section3 .icon-group{ padding: 2vh 0 0 0}
+.icon-group{ padding:0; }
+.icon-group li{ width: 33.3333vw; float: left; text-align: center;padding:0 0 2vh 0;}
+.icon-group .icon{ width: 15vw; margin:0 auto; }
+.icon-group h6{margin:1vh;padding: 0 1vw; color: #F26F21;    font-size: 0.8em;}
+.icon-group p{margin:1vh 0 0 0;left:0;font-size: 0.6em; color: #494646;padding: 0 1vw;text-indent: 0; font-weight:300;text-align: center;}
+
+.content-list{ border: 1px solid rgba(255,255,255,0.7); padding:0 4vw; }
+.content-list{ color: rgba(255,255,255,0.7);}
+
+
+.bgm-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 200;
+  display: block;
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+  background-image: url(../images/bgmBtn.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.bgm-btn.playing{
+  -webkit-animation:spin 2s infinite linear;
+}
+
+@-webkit-keyframes spin {
+  0%{
+    -webkit-transform: rotate(0deg);
+  }
+  50%{
+    -webkit-transform: rotate(180deg);
+  }
+  100%{
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.godown {
+    position: absolute;
+    left: 50%;
+    bottom: 1vh;
+    z-index: 100;
+    width: 60px;
+    height: 53px;
+    margin-left: -30px;
+}
+.godown span {display: block;
+    width: 50px;
+    height: 53px;
+    -webkit-animation: fade 3s infinite linear;
+    animation: fade 3s infinite linear;
+}
+.godown span { -webkit-animation: fade 3s infinite linear; animation: fade 3s infinite linear;}
+@-webkit-keyframes fade {
+	0% { opacity: 1;}
+	50% { opacity: 0.3;}
+	100% { opacity: 1;}
+}
+@keyframes fade {
+	0% {opacity: 1;}
+	50% { opacity: 0.3;}
+	100% { opacity: 1;}
+}
+
+
+
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?xlqgeo');
+  src:  url('../fonts/icomoon.eot?xlqgeo#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?xlqgeo') format('truetype'),
+    url('../fonts/icomoon.woff?xlqgeo') format('woff'),
+    url('...fonts/icomoon.svg?xlqgeo#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Fill-7{font-size: 40px;}
+.icon-Fill-7:before {
+  content: "\e900";
+  color: #F26F21;
+}
