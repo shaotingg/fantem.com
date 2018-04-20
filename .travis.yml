@@ -9,13 +9,12 @@ cache:
     - node_modules
 install:
   - yarn
-before_script:
-  - git config --global user.name "lerte"
-  - git config --global user.email "lerte@qq.com"
-script:
-  - yarn build
-after_success: |
-  if [ -n "$GITHUB_TOKEN" ]; then
-    cd "$TRAVIS_BUILD_DIR"
-    yarn deploy
-  fi
+  - yarn generate
+deploy: 
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist
+  target_branch: master
+on:
+  branch: dev
