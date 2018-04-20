@@ -6,6 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
+    "test": "echo \"Error: no test specified\" && exit 0",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
